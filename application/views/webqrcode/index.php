@@ -6,7 +6,7 @@
                 <img class="masthead-avatar  " src="https://environment.webclient.me/assets_qr/assets/img/portfolio/bit.png"  />
                 <!-- Masthead Heading-->
                 <h4 class="masthead-heading text-uppercase mb-0">   ถังหมายเลขที่ 1    </h4>
-                <input class="input100" type="text"   id="location" name="location" readonly  >
+                <input class="input100" type="text"   id="location" name="location" readonly hidden>
                 <br>
                  <h4 class="text-uppercase mb-4">สถานที่ : พระประแดง </h4>
                 <!-- Icon Divider-->
@@ -31,11 +31,15 @@
             <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
         </div>
         <!-- Portfolio Modals-->
+
+        <?php     ?>
         <script type="text/javascript">
+            var textlocation = $("#location").val();
+            var textbtndata =  textlocation+"กรุณากดปุ่มปิด";
             $("#btnsave").on("click",function(){  
             swal({
   title: "สำเร็จ",
-  text: "กรุณากดปุ่มปิด",
+  text: textbtndata,
   icon: "success",
   button: "ปิด",
 });
