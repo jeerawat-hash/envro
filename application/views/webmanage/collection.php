@@ -376,7 +376,7 @@ function initMap() {
         title: prompta,
         icon: {
                 url: "https://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png", // url
-                scaledSize: new google.maps.Size(20, 20), // scaled size
+                scaledSize: new google.maps.Size(50, 50), // scaled size
                 origin: new google.maps.Point(0,0), // origin
                 anchor: new google.maps.Point(0, 0) // anchor
             }
