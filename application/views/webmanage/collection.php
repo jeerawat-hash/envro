@@ -364,7 +364,41 @@ function initMap() {
    $.get("https://environment.webclient.me/index.php/Qrcontroller/getlocation",function(data){
 
     var obj = JSON.parse(data);
-    console.log(obj);
+     
+
+    for (let index = 0; index < obj.length; index++) {
+
+      
+      var marker = new google.maps.Marker({
+        position: latLng,
+        map: map,
+        title: prompta,
+        icon: {
+                url: "https://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png", // url
+                scaledSize: new google.maps.Size(20, 20), // scaled size
+                origin: new google.maps.Point(0,0), // origin
+                anchor: new google.maps.Point(0, 0) // anchor
+            }
+      }); 
+
+      
+    }
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
    });
 
