@@ -115,8 +115,8 @@ function showPosition(position) {
 		if(locationall != ""){
 			var objectLocation = JSON.parse(locationall);
 			//console.log(objectLocation);
-			//$("#longitude").val(objectLocation.Longitude);
-			//$("#latitude").val(objectLocation.Latitude);
+			 $("#longitude").val(objectLocation.Longitude);
+			 $("#latitude").val(objectLocation.Latitude);
 
 			console.log(objectLocation); 
 		} 
