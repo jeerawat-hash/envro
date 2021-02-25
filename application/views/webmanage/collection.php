@@ -331,6 +331,12 @@ function initMap() {
       var prompta = prompt("กรุณากรอกข้อความ...");
       
 
+
+
+
+
+
+
       var marker = new google.maps.Marker({
         position: latLng,
         map: map,
@@ -343,7 +349,48 @@ function initMap() {
             }
       }); 
 
+
+
+ 
+
    }});
+
+
+
+
+
+
+
+   $.get("https://environment.webclient.me/index.php/Qrcontroller/getlocation",function(data){
+
+    var obj = JSON.parse(data);
+    console.log(obj);
+
+   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    
 }
 
