@@ -76,12 +76,14 @@
                  if(data == 1 ){
                     swal({
                 title: "สำเร็จ",
-                text: "เรียบร้อย",
+                text: "บันทึกผลสำเร็จกำลังปิดแอพพลิเคชั่น....",
                 icon: "success",
-                button: "ปิด",
+               // button: "ปิด",
                      }); 
+                    
 
-                     liff.closeWindow();
+                     setTimeout(function(){ liff.closeWindow(); }, 5000);
+                    
                  }
             });  
             });
