@@ -52,14 +52,14 @@
                 button: "ปิด",
             }); 
 
-          /*  $.post("https://environment.webclient.me/index.php/Qrcontroller/insertlocation",{
+            $.post("https://environment.webclient.me/index.php/Qrcontroller/insertlocation",{
                 Latitude : lat,
                 Longitude : long,
                 Img : img,
                 Textpf : textpf
-            },function(){
-
-            }); */
+            },function(data){
+                console.log(data);
+            });  
 });
 </script>
 
