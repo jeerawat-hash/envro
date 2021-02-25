@@ -20,10 +20,16 @@ class Qrcontroller extends CI_Controller
                     $this->load->view('webqrcode/index' ); 
                     $this->load->view('webqrcode/footer' ); 
      }
+     public function  testdb()
+     {
+
+      echo $this->QRModel->testsql();
+
+     }
      
 
 
-     
+
 
 }
  

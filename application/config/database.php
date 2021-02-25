@@ -96,37 +96,12 @@ $db['default'] = array(
 );
 
   
-
-$db['Mssql'] = array(
-	'dsn'	=> 'mssql',
-	'hostname' => '',
-	'username' => 'sa',
-	'password' => 'smcadmin',
-	'database' => 'StockPrice',
-	'dbdriver' => 'odbc',
-	'dbprefix' => '',
-	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
-	'cache_on' => FALSE,
-	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
-	'encrypt' => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE
-);
-
-
-/*
-$db['Mssqlhr'] = array(
-	'dsn'	=> 'mssql',
-	'hostname' => '203.151.210.137',
-	'username' => 'sa',
-	'password' => 'bHOK<0r',
-	'database' => 'RL_HR',
+$db['envdb'] = array(
+	'dsn'	=> '',
+	'hostname' => '127.0.0.1',
+	'username' => 'jeerawatme_admin',
+	'password' => 'admin1234',
+	'database' => 'jeerawatme_env',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -142,30 +117,4 @@ $db['Mssqlhr'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
-*/
- 
- 
 
-
-
-$db['HR'] = array(
-	'dsn'	=> 'Mssqlhr',
-	'hostname' => '',
-	'username' => 'sa',
-	'password' => '$m(@dm!N',
-	'database' => '',
-	'dbdriver' => 'odbc',
-	'dbprefix' => '',
-	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
-	'cache_on' => FALSE,
-	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
-	'encrypt' => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE
-);
