@@ -26,6 +26,14 @@ class Qrcontroller extends CI_Controller
       echo $this->QRModel->testsql();
 
      }
+
+
+     public function  insertlocation()
+     {
+
+       print_r($_POST);
+       
+     }
      
 
 
