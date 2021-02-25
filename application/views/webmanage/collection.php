@@ -334,7 +334,7 @@ function initMap() {
               }
         }); 
 
-        
+        clickroute(parseFloat(obj[index].Lat),parseFloat(obj[index].Lot));
       }
 
       });
@@ -396,40 +396,10 @@ function initMap() {
 
 
 
-
-
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function clickroute(lati,long) {
+      var latLng = new google.maps.LatLng(lati, long); //Makes a latlng
+      map.panTo(latLng); //Make map global
+  }
 
    
 }
