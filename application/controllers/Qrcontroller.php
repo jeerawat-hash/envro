@@ -31,7 +31,13 @@ class Qrcontroller extends CI_Controller
      public function  insertlocation()
      {
 
-       print_r($_POST);
+       //print_r($_POST);
+       $Latitude = $_POST["Latitude"];
+       $Longitude = $_POST["Longitude"];
+       $Img = $_POST["Img"];
+       $Textpf = $_POST["Textpf"];
+       echo $this->QRModel->insertlocation($Latitude,$Longitude,$Img,$Textpf);
+
        
      }
      

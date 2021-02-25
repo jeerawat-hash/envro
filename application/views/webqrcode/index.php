@@ -36,10 +36,25 @@
  
         <script type="text/javascript">
              
-           
+            
 
-             console.log(tgetlo);
-            $("#btnsave").on("click",function(){  
+</script>
+
+
+<script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+
+<script> 
+  
+        function runApp() {
+          liff.getProfile().then(profile => {
+
+             $("#TextProfile").text(profile.displayName);
+             $("#ImgProfile").attr("src",profile.pictureUrl);
+            // $("#userId").attr("value",profile.userId);
+           // $("#LineID").attr("value",profile.userId);
+             
+
+           $("#btnsave").on("click",function(){  
               var long =   $("#longitude").val();
 			  var lat =   $("#latitude").val(); 
               var img =  $("#ImgProfile").attr("src");
@@ -58,28 +73,18 @@
                 Img : img,
                 Textpf : textpf
             },function(data){
-                console.log(data);
+                 if(data == 1 ){
+                    swal({
+                title: "สำเร็จ",
+                text: "เรียบร้อย",
+                icon: "success",
+                button: "ปิด",
+                     }); 
+
+                     liff.closeWindow();
+                 }
             });  
-});
-</script>
-
-
-<script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
-
-<script> 
-  
-        function runApp() {
-          liff.getProfile().then(profile => {
-
-             $("#TextProfile").text(profile.displayName);
-             $("#ImgProfile").attr("src",profile.pictureUrl);
-            // $("#userId").attr("value",profile.userId);
-           // $("#LineID").attr("value",profile.userId);
-             
-
-
-            console.log(profile.pictureUrl);
-
+            });
 
 
 
