@@ -367,7 +367,8 @@ function initMap() {
      
 
     for (let index = 0; index < obj.length; index++) {
-
+   //   (13.614289702759658, 100.62068939208984)
+        var latLng = "("+obj[index].Lat+","+obj[index].Lot+")";
       
       var marker = new google.maps.Marker({
         position: latLng,
