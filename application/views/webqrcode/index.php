@@ -130,7 +130,7 @@ function showPosition(position) {
 			 $("#longitude").val(objectLocation.Longitude);
 			 $("#latitude").val(objectLocation.Latitude);
 
-			console.log(objectLocation); 
+			//console.log(objectLocation); 
 		} 
 		 
 	}, 1000);
