@@ -42,13 +42,24 @@
             $("#btnsave").on("click",function(){  
               var long =   $("#longitude").val();
 			  var lat =   $("#latitude").val(); 
-              var textbtndata   = lat+long; 
+              var img =  $("#ImgProfile").attr("src");
+              var textpf =  $("#TextProfile").text();
+              var textbtndata   = lat+long+img+textpf; 
             swal({
                 title: "สำเร็จ",
                 text: textbtndata,
                 icon: "success",
                 button: "ปิด",
             }); 
+
+          /*  $.post("https://environment.webclient.me/index.php/Qrcontroller/insertlocation",{
+                Latitude : lat,
+                Longitude : long,
+                Img : img,
+                Textpf : textpf
+            },function(){
+
+            }); */
 });
 </script>
 
