@@ -78,8 +78,7 @@
                 title: "สำเร็จ",
                 text: "บันทึกผลสำเร็จกำลังปิดแอพพลิเคชั่น....",
                 icon: "success",
-                showCancelButton: false, // There won't be any cancel button
-                showConfirmButton: false // There won't be any confirm button
+                button: false,
                      }); 
                     
 
