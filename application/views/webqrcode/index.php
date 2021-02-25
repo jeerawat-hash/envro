@@ -83,7 +83,7 @@
 
   
 <script>
-var x = document.getElementById("location");
+var x = document.getElementById("tgetlo");
 
  getLocation();
 
