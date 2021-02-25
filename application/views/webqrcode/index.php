@@ -6,6 +6,7 @@
                 <img class="masthead-avatar  " src="https://environment.webclient.me/assets_qr/assets/img/portfolio/bit.png"  />
                 <!-- Masthead Heading-->
                 <h4 class="masthead-heading text-uppercase mb-0">   ถังหมายเลขที่ 1    </h4>
+                <input class="input100" type="text"   id="location" name="location" readonly  >
                 <br>
                  <h4 class="text-uppercase mb-4">สถานที่ : พระประแดง </h4>
                 <!-- Icon Divider-->
@@ -73,3 +74,27 @@
         }, err => console.error(err.code, error.message));
   </script>
 
+  
+<script>
+var x = document.getElementById("location");
+
+ getLocation();
+
+//console.log(location);
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+   alert("Geolocation is not supported by this browser.");
+  }
+}
+
+function showPosition(position) {
+  //x.value = "{'Latitude': '" + position.coords.latitude + "','Longitude': " + position.coords.longitude+"}";
+	x.value = '{ "Latitude":"'+ position.coords.latitude +'", "Longitude":"'+position.coords.longitude+'"}';
+ 
+}
+
+
+</script>
