@@ -40,3 +40,36 @@
 });
 });
 </script>
+
+
+<script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+
+<script> 
+  
+        function runApp() {
+          liff.getProfile().then(profile => {
+
+           // $("#displayname").attr("value",profile.displayName);
+           // $("#pictureUrl").attr("src",profile.pictureUrl);
+           // $("#userId").attr("value",profile.userId);
+           // $("#LineID").attr("value",profile.userId);
+             
+
+
+            console.log(profile.pictureUrl);
+
+
+
+
+          }).catch(err => console.error(err));
+        }
+        liff.init({ liffId: "1655702904-dOw6XRvE" }, () => {
+          if (liff.isLoggedIn()) {
+            runApp();
+
+          } else {
+            liff.login();
+          }
+        }, err => console.error(err.code, error.message));
+  </script>
+
