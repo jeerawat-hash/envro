@@ -312,6 +312,29 @@ function initMap() {
  
 
 
+  $.get("https://environment.webclient.me/index.php/Qrcontroller/getlocation",function(data){
+
+var obj = JSON.parse(data);
+ 
+
+for (let index = 0; index < obj.length; index++) {
+//   (13.614289702759658, 100.62068939208984)
+    var latLng = "("+obj[index].Lat+","+obj[index].Lot+")";
+  
+  var marker = new google.maps.Marker({
+    position: {lat : obj[index].Lat ,lng : obj[index].Lot },
+    map: map,
+    title: "้qqqq",
+    icon: {
+            url: "https://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png", // url
+            scaledSize: new google.maps.Size(50, 50), // scaled size
+            origin: new google.maps.Point(0,0), // origin
+            anchor: new google.maps.Point(0, 0) // anchor
+        }
+  }); 
+
+  
+}
 
 
 
@@ -361,29 +384,6 @@ function initMap() {
 
 
 
-   $.get("https://environment.webclient.me/index.php/Qrcontroller/getlocation",function(data){
-
-    var obj = JSON.parse(data);
-     
-
-    for (let index = 0; index < obj.length; index++) {
-   //   (13.614289702759658, 100.62068939208984)
-        var latLng = "("+obj[index].Lat+","+obj[index].Lot+")";
-      
-      var marker = new google.maps.Marker({
-        position: latLng,
-        map: map,
-        title: prompta,
-        icon: {
-                url: "https://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png", // url
-                scaledSize: new google.maps.Size(50, 50), // scaled size
-                origin: new google.maps.Point(0,0), // origin
-                anchor: new google.maps.Point(0, 0) // anchor
-            }
-      }); 
-
-      
-    }
 
      
 
