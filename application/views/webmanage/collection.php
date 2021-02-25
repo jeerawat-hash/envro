@@ -320,7 +320,10 @@ var obj = JSON.parse(data);
 for (let index = 0; index < obj.length; index++) {
 //   (13.614289702759658, 100.62068939208984)
     var latLng = "("+obj[index].Lat+","+obj[index].Lot+")";
-  
+    
+  console.log(obj[index].Lat);
+  console.log(obj[index].Lot);
+
   var marker = new google.maps.Marker({
     position: {lat : obj[index].Lat ,lng : obj[index].Lot },
     map: map,
