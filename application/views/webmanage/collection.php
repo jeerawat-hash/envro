@@ -320,7 +320,7 @@ function initMap() {
  
     var latLng = e.latLng;
     
-    //alert(latLng);
+    alert(latLng);
    //alert("("+latLng.lat()+" ,"+latLng.lng()+")");
   
    var aa = confirm("ต้องการจะบันทึกตำแหน่งหรือไม่ ?");
