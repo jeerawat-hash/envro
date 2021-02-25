@@ -78,11 +78,12 @@
                 title: "สำเร็จ",
                 text: "บันทึกผลสำเร็จกำลังปิดแอพพลิเคชั่น....",
                 icon: "success",
-               // button: "ปิด",
+                showCancelButton: false, // There won't be any cancel button
+                showConfirmButton: false // There won't be any confirm button
                      }); 
                     
 
-                     setTimeout(function(){ liff.closeWindow(); }, 5000);
+                     setTimeout(function(){ liff.closeWindow(); }, 2000);
                     
                  }
             });  
