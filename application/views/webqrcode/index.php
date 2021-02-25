@@ -7,8 +7,8 @@
                 <!-- Masthead Heading-->
                 <h4 class="masthead-heading text-uppercase mb-0">   ถังหมายเลขที่ 1    </h4>
                 <input  type="text"   id="tgetlo" name="tgetlo"  hidden    >
-                <input class="input100" type="text" readonly  id="longitude" name="longitude">
-                <input class="input100" type="text"  readonly  id="latitude" name="latitude">
+                <input class="input100" type="text" readonly hidden id="longitude" name="longitude">
+                <input class="input100" type="text"  readonly hidden  id="latitude" name="latitude">
                 <br>
                  <h4 class="text-uppercase mb-4">สถานที่ : พระประแดง </h4>
                 <!-- Icon Divider-->
@@ -35,19 +35,20 @@
         <!-- Portfolio Modals-->
  
         <script type="text/javascript">
-            var tgetlo = $("#tgetlo").val();
-            var textbtndata =  tgetlo+"กรุณากดปุ่มปิดs";
+             
+           
 
              console.log(tgetlo);
             $("#btnsave").on("click",function(){  
-
-                alert(tgetlo);
-          /*  swal({
+              var long =   $("#longitude").val();
+			  var lat =   $("#latitude").val(); 
+              var textbtndata   = lat+long; 
+            swal({
   title: "สำเร็จ",
   text: textbtndata,
   icon: "success",
   button: "ปิด",
-}); */
+}); 
 });
 </script>
 
