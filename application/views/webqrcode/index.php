@@ -53,7 +53,7 @@
             // $("#userId").attr("value",profile.userId);
            // $("#LineID").attr("value",profile.userId);
              
-
+            $("#btnsave").hide();
            $("#btnsave").on("click",function(){  
               var long =   $("#longitude").val();
 			  var lat =   $("#latitude").val(); 
@@ -136,7 +136,7 @@ function showPosition(position) {
 			//console.log(objectLocation);
 			 $("#longitude").val(objectLocation.Longitude);
 			 $("#latitude").val(objectLocation.Latitude);
-
+             $("#btnsave").show();
 			//console.log(objectLocation); 
 		} 
 		 

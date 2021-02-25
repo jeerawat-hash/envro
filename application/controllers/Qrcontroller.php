@@ -42,7 +42,12 @@ class Qrcontroller extends CI_Controller
      }
      
 
+     public function getlocation()
+      {
 
+            echo json_encode($this->QRModel->getlocation());
+
+      }
 
 
 }
