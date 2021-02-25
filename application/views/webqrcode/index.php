@@ -31,11 +31,12 @@
             <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
         </div>
         <!-- Portfolio Modals-->
-
-        <?php     ?>
+ 
         <script type="text/javascript">
             var textlocation = $("#location").val();
             var textbtndata =  textlocation+"กรุณากดปุ่มปิดs";
+
+             console.log(textlocation);
             $("#btnsave").on("click",function(){  
             swal({
   title: "สำเร็จ",
