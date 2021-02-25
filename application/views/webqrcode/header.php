@@ -34,8 +34,8 @@
             <div class="container">
 
 
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">  <img class="rounded-circle z-depth-2" alt="100x100" src="https://environment.webclient.me/assets_qr/assets/img/portfolio/img1.jpg"
-          data-holder-rendered="true"   height="50px"  >    คุณจีระวัฒน์  </a>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">  <img class="rounded-circle z-depth-2" alt="100x100" src=""  id = "ImgProfile"
+          data-holder-rendered="true"   height="50px"  >    <label id ="TextProfile">  </label> </a>
                 <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     เมนู
                     <i class="fas fa-bars"></i>

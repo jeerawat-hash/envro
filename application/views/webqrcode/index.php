@@ -49,9 +49,9 @@
         function runApp() {
           liff.getProfile().then(profile => {
 
-           // $("#displayname").attr("value",profile.displayName);
-           // $("#pictureUrl").attr("src",profile.pictureUrl);
-           // $("#userId").attr("value",profile.userId);
+             $("#TextProfile").text(profile.displayName);
+             $("#ImgProfile").attr("src",profile.pictureUrl);
+            // $("#userId").attr("value",profile.userId);
            // $("#LineID").attr("value",profile.userId);
              
 
