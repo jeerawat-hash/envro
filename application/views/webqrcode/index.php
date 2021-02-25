@@ -44,11 +44,11 @@
 			  var lat =   $("#latitude").val(); 
               var textbtndata   = lat+long; 
             swal({
-  title: "สำเร็จ",
-  text: textbtndata,
-  icon: "success",
-  button: "ปิด",
-}); 
+                title: "สำเร็จ",
+                text: textbtndata,
+                icon: "success",
+                button: "ปิด",
+            }); 
 });
 </script>
 
@@ -122,6 +122,6 @@ function showPosition(position) {
 			console.log(objectLocation); 
 		} 
 		 
-	}, 3000);
+	}, 1000);
  
 </script>
