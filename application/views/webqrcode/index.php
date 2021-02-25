@@ -77,7 +77,8 @@
                     swal({
                 title: "สำเร็จ",
                 text: "บันทึกผลสำเร็จกำลังปิดแอพพลิเคชั่น....",
-                icon: "success" 
+                icon: "success",
+                button: false,
                      }); 
                     
 
