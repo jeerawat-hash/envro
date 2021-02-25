@@ -35,7 +35,7 @@
         <?php     ?>
         <script type="text/javascript">
             var textlocation = $("#location").val();
-            var textbtndata =  textlocation+"กรุณากดปุ่มปิด";
+            var textbtndata =  textlocation+"กรุณากดปุ่มปิดs";
             $("#btnsave").on("click",function(){  
             swal({
   title: "สำเร็จ",
