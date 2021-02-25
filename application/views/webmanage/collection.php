@@ -308,40 +308,50 @@ function initMap() {
  
   });
    
-   
- 
-
-
-  $.get("https://environment.webclient.me/index.php/Qrcontroller/getlocation",function(data){
-
-var obj = JSON.parse(data);
- 
-
-for (let index = 0; index < obj.length; index++) {
-//   (13.614289702759658, 100.62068939208984)
-    var latLng = "("+obj[index].Lat+","+obj[index].Lot+")";
-
-  console.log(obj[index].Lat);
-  console.log(obj[index].Lot);
-
-  var marker = new google.maps.Marker({
-    position: {lat : parseFloat(obj[index].Lat) ,lng : parseFloat(obj[index].Lot) },
-    map: map,
-    title: "้qqqq",
-    icon: {
-            url: obj[index].Image, // url
-            scaledSize: new google.maps.Size(20, 20), // scaled size
-            origin: new google.maps.Point(0,0), // origin
-            anchor: new google.maps.Point(0, 0) // anchor
-        }
-  }); 
-
+    
   
-}
+
+  setInterval(function(){ 
+    
+    
+        
+        $.get("https://environment.webclient.me/index.php/Qrcontroller/getlocation",function(data){
+
+      var obj = JSON.parse(data);
+
+
+      for (let index = 0; index < obj.length; index++) { 
+         
+        var marker = new google.maps.Marker({
+          position: {lat : parseFloat(obj[index].Lat) ,lng : parseFloat(obj[index].Lot) },
+          map: map,
+          title: "้qqqq",
+          icon: {
+                  url: obj[index].Image, // url
+                  scaledSize: new google.maps.Size(50, 50), // scaled size
+                  origin: new google.maps.Point(0,0), // origin
+                  anchor: new google.maps.Point(0, 0) // anchor
+              }
+        }); 
+
+        
+      }
+
+      });
 
 
 
 
+
+  }, 1000);
+
+
+
+
+
+
+
+/*
   google.maps.event.addListener(map, "click", function (e) {
  
     var latLng = e.latLng;
@@ -380,7 +390,7 @@ for (let index = 0; index < obj.length; index++) {
  
 
    }});
-
+*/
 
 
 
@@ -397,14 +407,6 @@ for (let index = 0; index < obj.length; index++) {
 
 
 
-
-
-
-
-
-
-
-   });
 
 
 
