@@ -328,11 +328,8 @@ function initMap() {
         }); 
 
 
-
-
-
             marker.addListener('click', function() {
-              alert(marker.ID);
+              alert(marker.ID + " " + marker.LineName);
 
                 //alert(marker.LineName);
                 // $("#exampleModal").find("#exampleModalLabel").text(marker.LineName);
