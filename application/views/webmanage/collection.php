@@ -166,6 +166,41 @@
 		</div>
 		 <!--- MODAL -->
  
+
+
+
+
+
+ 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img id="img" src="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
    
     <!-- Replace the value of the key parameter with your own API key. -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxvr9Bme5OOup5_u4FBaSnCL6Ed0_dhKo&callback=initMap" async defer></script> 
@@ -277,7 +312,8 @@ function initMap() {
           position: {lat : parseFloat(obj[index].Lat) ,lng : parseFloat(obj[index].Lot) },
           map: map,
           title: "qqqq",
-          namej : "jeerawat",
+          LineName : obj[index].Name,
+          Image : obj[index].Image,
           icon: {
                   url: obj[index].Image, // url
                   scaledSize: new google.maps.Size(50, 50), // scaled size
@@ -291,7 +327,16 @@ function initMap() {
 
 
             marker.addListener('click', function() {
-                alert(marker.namej);
+
+
+                //alert(marker.LineName);
+                $("#exampleModal").find("#exampleModalLabel").text(marker.LineName);
+                $("#exampleModal").find("#img").text(marker.Image);
+                $("#exampleModal").modal("show");
+
+
+
+
             });
             
 
