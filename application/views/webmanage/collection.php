@@ -184,7 +184,10 @@
         </button>
       </div>
       <div class="modal-body">
+        <center>
         <img id="img" src="">
+        </center>
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -331,7 +334,7 @@ function initMap() {
 
                 //alert(marker.LineName);
                 $("#exampleModal").find("#exampleModalLabel").text(marker.LineName);
-                $("#exampleModal").find("#img").text(marker.Image);
+                $("#exampleModal").find("#img").attr("src",marker.Image);
                 $("#exampleModal").modal("show");
 
 
