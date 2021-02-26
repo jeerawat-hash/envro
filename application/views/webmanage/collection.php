@@ -15,11 +15,7 @@
   /* The width is the width of the web page */
 }
     </style>
-        <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
-
+ 
 		<div class="main-panel">
 
 			<div class="content">
@@ -170,51 +166,7 @@
 		</div>
 		 <!--- MODAL -->
  
-  
-		 <script type="text/javascript"> 
-		 	 $("#btn_create_group_service").on("click",function(){ 
-		 	   $("#myModalaa").modal("show");
-            			 
-      	    });
-
-		 	 
-
-
-		$('#alert_demo_3_1').click(function(e) {
-					swal("Good job!", "You clicked the button!", {
-						icon : "error",
-						buttons: {        			
-							confirm: {
-								className : 'btn btn-danger'
-							}
-						},
-					});
-				});
-				
-
-
-		 </script>
-
-
-		 <script type="text/javascript">// Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  const uluru = { lat: -25.344, lng: 131.036 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: uluru,
-  });
-  // The marker, positioned at Uluru
-  const marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-  });
-}</script>
-
-
-
-
+   
     <!-- Replace the value of the key parameter with your own API key. -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxvr9Bme5OOup5_u4FBaSnCL6Ed0_dhKo&callback=initMap" async defer></script>
     
