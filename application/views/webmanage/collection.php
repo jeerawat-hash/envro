@@ -335,13 +335,16 @@ function initMap() {
               $.post("https://environment.webclient.me/index.php/Qrcontroller/GetDatabyID",{
                 id : id
               },function(data){
-                alert(data);
-              });
-
-                //alert(marker.LineName);
+                // alert(data);
+                var obj = JSON.parse(data);
+                console.log(obj);
                 // $("#exampleModal").find("#exampleModalLabel").text(marker.LineName);
                 // $("#exampleModal").find("#img").attr("src",marker.Image);
                 // $("#exampleModal").modal("show");
+              });
+
+                //alert(marker.LineName);
+
             });
             
 
