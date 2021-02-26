@@ -277,7 +277,7 @@ function initMap() {
           position: {lat : parseFloat(obj[index].Lat) ,lng : parseFloat(obj[index].Lot) },
           map: map,
           title: "qqqq",
-          namej : "jeerawat";
+          namej : "jeerawat":
           icon: {
                   url: obj[index].Image, // url
                   scaledSize: new google.maps.Size(50, 50), // scaled size
