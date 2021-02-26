@@ -277,6 +277,7 @@ function initMap() {
           position: {lat : parseFloat(obj[index].Lat) ,lng : parseFloat(obj[index].Lot) },
           map: map,
           title: "qqqq",
+          namej : "jeerawat";
           icon: {
                   url: obj[index].Image, // url
                   scaledSize: new google.maps.Size(50, 50), // scaled size
@@ -290,7 +291,7 @@ function initMap() {
 
 
             marker.addListener('click', function() {
-                alert(marker.title);
+                alert(marker.namej);
             });
             
 
