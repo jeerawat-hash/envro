@@ -329,7 +329,7 @@ function initMap() {
 
 
             marker.addListener('click', function() {
-              alert(obj[index].ID + " " + obj[index].LineName);
+              alert(obj[index].ID + " " + marker.LineName);
 
                 //alert(marker.LineName);
                 // $("#exampleModal").find("#exampleModalLabel").text(marker.LineName);
