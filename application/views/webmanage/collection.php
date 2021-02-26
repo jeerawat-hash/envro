@@ -184,11 +184,28 @@
         </button>
       </div>
       <div class="modal-body">
-        <center>
-        <img id="img" src="" width="20%" height="20%">
-        <label id="Lat"></label>
-        <label id="Lon"></label>
-        </center>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-6">Name</div>
+            <div class="col-6"><label id="Name"></label></div>
+          </div>
+          <div class="row">
+            <div class="col-12"><img src="" id="img"></div>
+          </div>
+          <div class="row">
+            <div class="col-6">Lat</div>
+            <div class="col-6"><label id="Lat"></label></div>
+          </div>
+          <div class="row">
+            <div class="col-6">Lot</div>
+            <div class="col-6"><label id="Lot"></label></div>
+          </div>
+          <div class="row">
+            <div class="col-6">Comment</div>
+            <div class="col-6"><label id="Comment"></label></div>
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -197,13 +214,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
 
    
     <!-- Replace the value of the key parameter with your own API key. -->
@@ -337,19 +347,21 @@ function initMap() {
               },function(data){
                 // alert(data);
                 var obj = JSON.parse(data);
-                console.log(obj);
-                // $("#exampleModal").find("#exampleModalLabel").text(marker.LineName);
-                // $("#exampleModal").find("#img").attr("src",marker.Image);
-                // $("#exampleModal").modal("show");
+                var Lat = obj[0].Lat;
+                var Lot = obj[0].Lot;
+                var Image = obj[0].Image;
+                var Comment = obj[0].Comment;
+                var Name = obj[0].Name;
+
+                $("#exampleModal").find("#exampleModalLabel").text(Name);
+                $("#exampleModal").find("#img").attr("src",Image);
+                $("#exampleModal").find("#Lat").text(Lat);
+                $("#exampleModal").find("#Lot").text(Lot);
+                $("#exampleModal").find("#Comment").text(Comment);
+                $("#exampleModal").modal("show");
               });
-
-                //alert(marker.LineName);
-
             });
             
-
-
-
         //clickroute(parseFloat(obj[index].Lat),parseFloat(obj[index].Lot));
       }
 
