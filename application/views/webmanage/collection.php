@@ -191,7 +191,7 @@
             <div class="col-6"><label id="Name"></label></div>
           </div>
           <div class="row">
-            <div class="col-12"><img src="" id="img" width="20%" height="20%"></div>
+            <div class="col-12"><img src="" id="img" width="30%"></div>
           </div>
           <div class="row">
             <div class="col-6">Lat</div>
