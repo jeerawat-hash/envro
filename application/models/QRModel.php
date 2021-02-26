@@ -37,6 +37,12 @@
       return $this->envdb->query("SELECT * FROM `Env_Collection` where Lat != ''")->result();
     }
 
+    public function GetDatabyID($id)
+    {
+      $this->envdb = $this->load->database("envdb",true);
+      return $this->envdb->query("SELECT * FROM `Env_Collection` WHERE `ID` = ".$id)->result();
+    }
+
      
     
 } 
