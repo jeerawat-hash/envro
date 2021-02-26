@@ -329,7 +329,14 @@ function initMap() {
 
 
             marker.addListener('click', function() {
-              alert(obj[index].ID + " " + marker.LineName);
+              //alert(obj[index].ID + " " + marker.LineName);
+              var id = obj[index].ID;
+              
+              $.post("https://environment.webclient.me/index.php/Qrcontroller/GetDatabyID",{
+                id : id
+              },function(data){
+                alert(data);
+              });
 
                 //alert(marker.LineName);
                 // $("#exampleModal").find("#exampleModalLabel").text(marker.LineName);
