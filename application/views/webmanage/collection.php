@@ -185,9 +185,10 @@
       </div>
       <div class="modal-body">
         <center>
-        <img id="img" src="">
+        <img id="img" src="" width="20%" height="20%">
+        <label id="Lat"></label>
+        <label id="Lon"></label>
         </center>
-
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -317,6 +318,7 @@ function initMap() {
           title: "qqqq",
           LineName : obj[index].Name,
           Image : obj[index].Image,
+          ID : obj[index].ID,
           icon: {
                   url: obj[index].Image, // url
                   scaledSize: new google.maps.Size(50, 50), // scaled size
@@ -330,16 +332,12 @@ function initMap() {
 
 
             marker.addListener('click', function() {
-
+              alert(marker.ID);
 
                 //alert(marker.LineName);
-                $("#exampleModal").find("#exampleModalLabel").text(marker.LineName);
-                $("#exampleModal").find("#img").attr("src",marker.Image);
-                $("#exampleModal").modal("show");
-
-
-
-
+                // $("#exampleModal").find("#exampleModalLabel").text(marker.LineName);
+                // $("#exampleModal").find("#img").attr("src",marker.Image);
+                // $("#exampleModal").modal("show");
             });
             
 
