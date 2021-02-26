@@ -276,7 +276,7 @@ function initMap() {
         var marker = new google.maps.Marker({
           position: {lat : parseFloat(obj[index].Lat) ,lng : parseFloat(obj[index].Lot) },
           map: map,
-          title: "้qqqq",
+          title: "qqqq",
           icon: {
                   url: obj[index].Image, // url
                   scaledSize: new google.maps.Size(50, 50), // scaled size
@@ -284,6 +284,17 @@ function initMap() {
                   anchor: new google.maps.Point(0, 0) // anchor
               }
         }); 
+
+
+
+
+
+            marker.addListener('click', function() {
+                alert(marker.title);
+            });
+            
+
+
 
         //clickroute(parseFloat(obj[index].Lat),parseFloat(obj[index].Lot));
       }
