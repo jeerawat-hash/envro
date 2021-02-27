@@ -357,8 +357,7 @@ function initMap() {
           position: {lat : parseFloat(obj[index].Lat) ,lng : parseFloat(obj[index].Lot) },
           map: map,
           label : "aaaa",
-          title: "qqqq",
-          animation: google.maps.Animation.DROP,
+          title: "qqqq", 
           LineName : obj[index].Name,
           Image : obj[index].Image,
           icon : svgMarker,
@@ -373,7 +372,7 @@ function initMap() {
 
 
             marker.addListener('click', function() {
-
+ 
            
 
 
