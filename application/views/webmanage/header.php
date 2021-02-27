@@ -114,7 +114,7 @@
             <div class="info">
               <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
                 <span>
-                  Hizrian
+                  ผู้ใช้งาน
                   <span class="user-level">Administrator</span>
                   <span class="caret"></span>
                 </span>
