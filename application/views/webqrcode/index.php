@@ -1,8 +1,7 @@
-<?php 
+ 
 
-print_r($_GET);
+ <input type="text" id="BinID" value="<?php echo (isset($_GET["key"])) ? $_GET["key"] : 0; ?>" >
 
- ?>
 
          <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
 
