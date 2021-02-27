@@ -346,13 +346,13 @@ function initMap() {
           title: "qqqq",
           LineName : obj[index].Name,
           Image : obj[index].Image,
-          ID : obj[index].ID,
+          ID : obj[index].ID/*,
           icon: {
                   url: obj[index].Image, // url
                   scaledSize: new google.maps.Size(50, 50), // scaled size
                   origin: new google.maps.Point(0,0), // origin
                   anchor: new google.maps.Point(0, 0) // anchor
-              }
+              } */
         }); 
 
 
