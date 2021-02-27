@@ -61,23 +61,6 @@
            var BinID = $("#BinID").val();
             
 
-            if (BinID == 0) {
-
-              swal({
-                  title: "ผิดพลาด",
-                  text: "กรุณาลองใหม่ภายหลัง",
-                  icon: "error",
-                  button: "ปิด",
-              }); 
-
-              $("#btnsave").hide();
-              liff.closeWindow();
-            }else{
-
-              $("#btnsave").show(); 
-              
-            }
-
 
 
 
@@ -188,7 +171,27 @@ function showPosition(position) {
 			//console.log(objectLocation);
 			 $("#longitude").val(objectLocation.Longitude);
 			 $("#latitude").val(objectLocation.Latitude);
-             $("#btnsave").show();
+
+            var BinID = $("#BinID").val();
+            
+
+            if (BinID == 0) {
+
+              swal({
+                  title: "ผิดพลาด",
+                  text: "กรุณาลองใหม่ภายหลัง",
+                  icon: "error",
+                  button: "ปิด",
+              }); 
+
+              $("#btnsave").hide();
+              liff.closeWindow();
+            }else{
+
+              $("#btnsave").show(); 
+              
+            }
+
 			//console.log(objectLocation); 
 		} 
 		 
