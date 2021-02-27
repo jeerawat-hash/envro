@@ -340,6 +340,8 @@ function initMap() {
 
       var markers = [];
 
+      marker.setMap(null);
+
 
       for (let index = 0; index < obj.length; index++) { 
         
@@ -379,8 +381,7 @@ function initMap() {
 
 
             marker.addListener('click', function() {
- 
-            
+  
               //alert(obj[index].ID + " " + marker.LineName);
               var id = obj[index].ID;
               
