@@ -374,14 +374,7 @@ function initMap() {
 
             marker.addListener('click', function() {
 
-              ////
-              if (marker.getAnimation() !== null) {
-                marker.setAnimation(null);
-              } else {
-                marker.setAnimation(google.maps.Animation.BOUNCE);
-              }
-              ///
-
+           
 
 
               //alert(obj[index].ID + " " + marker.LineName);
