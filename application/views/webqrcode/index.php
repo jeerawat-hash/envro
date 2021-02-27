@@ -1,3 +1,9 @@
+<?php 
+
+print_r($_GET);
+
+ ?>
+
          <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
 
           <header class="masthead bg-primary text-white text-center">
