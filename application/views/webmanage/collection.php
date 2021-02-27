@@ -336,7 +336,7 @@ function initMap() {
 
       var obj = JSON.parse(data);
 
-      setMapOnAll(null);
+       
 
       var markers = [];
 
