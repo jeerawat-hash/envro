@@ -378,9 +378,7 @@ var markersArray = [];
 
             marker.addListener('click', function() {
  
-           
-
-
+            
               //alert(obj[index].ID + " " + marker.LineName);
               var id = obj[index].ID;
               
@@ -413,7 +411,7 @@ var markersArray = [];
 
 
 
-  }, 1000);
+  }, 3000);
 
 
 
