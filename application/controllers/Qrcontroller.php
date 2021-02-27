@@ -28,8 +28,9 @@ class Qrcontroller extends CI_Controller
     $Img = $_POST["Img"];
     $Textpf = $_POST["Textpf"];
     $BinID = $_POST["BinID"];
-    echo $this->QRModel->insertlocation($BinID,$Latitude,$Longitude,$Img,$Textpf);
-    
+    $UserID = $_POST["UserID"];
+    echo $this->QRModel->insertlocation( $UserID,$BinID,$Latitude,$Longitude,$Img,$Textpf);
+
   }
  
   public function getlocation()

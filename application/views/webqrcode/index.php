@@ -108,6 +108,7 @@
 
            $("#btnsave").hide();
            $("#btnsave").on("click",function(){  
+                var userId = profile.userId;
                 var BinID =   $("#BinID").val();
                 var long =   $("#longitude").val();
   			         var lat =   $("#latitude").val(); 
@@ -123,6 +124,7 @@
               }); */
 
               $.post("https://environment.webclient.me/index.php/Qrcontroller/insertlocation",{
+                  UserID : userId,
                   BinID : BinID,
                   Latitude : lat,
                   Longitude : long,

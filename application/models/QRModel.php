@@ -18,14 +18,14 @@
     }
 
      
-    public function insertlocation($BinID,$Latitude,$Longitude,$Img,$Textpf)
+    public function insertlocation($UserID,$BinID,$Latitude,$Longitude,$Img,$Textpf)
     {
 
       $this->envdb = $this->load->database("envdb",true);
 
-      $this->envdb->query("INSERT INTO `Env_Collection` (`ID`, `BinID`, `FName`, `Image`, `StampDate`, `Lat`, `Lot`, `Comment`)
+      $this->envdb->query("INSERT INTO `Env_Collection` (`ID`, `UserID`, `BinID`, `FName`, `Image`, `StampDate`, `Lat`, `Lot`, `Comment`)
        VALUES 
-      (NULL , '".$BinID."', '".$Textpf."', '".$Img."', '".date("Y-m-d")."', '".$Latitude."', '".$Longitude."', 'BIT 1 ')");
+      (NULL , '".$UserID."', '".$BinID."', '".$Textpf."', '".$Img."', '".date("Y-m-d")."', '".$Latitude."', '".$Longitude."', 'BIT 1 ')");
 
       return 1;
  
