@@ -59,7 +59,19 @@
            // $("#LineID").attr("value",profile.userId);
                
            var BinID = $("#BinID").val();
-            
+          
+            if (BinID == 0) {
+
+              swal({
+                  title: "ผิดพลาด",
+                  text: "กรุณาลองใหม่ภายหลัง",
+                  icon: "error",
+                  button: "ปิด",
+              }); 
+
+              $("#btnsave").hide();
+              liff.closeWindow();
+            }
 
 
 
