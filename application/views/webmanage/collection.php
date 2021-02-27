@@ -360,8 +360,8 @@ function initMap() {
          marker = new google.maps.Marker({
           position: {lat : parseFloat(obj[index].Lat) ,lng : parseFloat(obj[index].Lot) },
           map: map,
-          label : "aaaa",
-          title: "qqqq", 
+          label : "ถัง",
+          title: "ถัง", 
           LineName : obj[index].Name,
           Image : obj[index].Image,
           icon : svgMarker,
