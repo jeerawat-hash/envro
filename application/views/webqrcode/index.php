@@ -10,12 +10,12 @@
                 <!-- Masthead Avatar Image-->  
                 <img class="masthead-avatar  " src="https://environment.webclient.me/assets_qr/assets/img/portfolio/bit.png"  />
                 <!-- Masthead Heading-->
-                <h4 class="masthead-heading text-uppercase mb-0">   ถังหมายเลขที่ 1    </h4>
+                <h4 class="masthead-heading text-uppercase mb-0" id="BinName">       </h4>
                 <input  type="text"   id="tgetlo" name="tgetlo"  hidden    >
                 <input class="input100" type="text" readonly hidden id="longitude" name="longitude">
                 <input class="input100" type="text"  readonly hidden  id="latitude" name="latitude">
                 <br>
-                 <h4 class="text-uppercase mb-4">สถานที่ : พระประแดง </h4>
+                 <!--<h4 class="text-uppercase mb-4">สถานที่ : พระประแดง </h4> -->
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -81,7 +81,8 @@
               },function(data){
 
                 var obj = JSON.parse(data);
-                console.log(obj);
+                //console.log(obj);
+                $("#BinName").text(obj[0].Name);
 
 
             });
