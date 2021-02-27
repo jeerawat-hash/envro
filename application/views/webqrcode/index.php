@@ -84,7 +84,6 @@
                 //console.log(obj);
                 $("#BinName").text(obj[0].Name);
 
-
             });
 
 
@@ -107,6 +106,7 @@
 
            $("#btnsave").hide();
            $("#btnsave").on("click",function(){  
+                var BinID =   $("#BinID").val();
                 var long =   $("#longitude").val();
   			         var lat =   $("#latitude").val(); 
                 var img =  $("#ImgProfile").attr("src");
@@ -120,6 +120,7 @@
               }); 
 
               $.post("https://environment.webclient.me/index.php/Qrcontroller/insertlocation",{
+                  BinID : BinID,
                   Latitude : lat,
                   Longitude : long,
                   Img : img,
