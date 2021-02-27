@@ -234,8 +234,6 @@ function initMap() {
         });
 
 
-
-
   /*
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 13.59934, lng: 100.59675},
@@ -336,12 +334,6 @@ function initMap() {
 
       var obj = JSON.parse(data);
 
-       
-
-      var markers = [];
-
-      marker.setMap(null);
-
 
       for (let index = 0; index < obj.length; index++) { 
         
@@ -359,11 +351,11 @@ function initMap() {
         };
 
 
-         marker = new google.maps.Marker({
+        var marker = new google.maps.Marker({
           position: {lat : parseFloat(obj[index].Lat) ,lng : parseFloat(obj[index].Lot) },
           map: map,
-          label : "ถัง",
-          title: "ถัง", 
+          label : "ถังขยะ",
+          title: "ถังขยะ", 
           LineName : obj[index].Name,
           Image : obj[index].Image,
           icon : svgMarker,
@@ -376,12 +368,12 @@ function initMap() {
               } */
         }); 
 
- 
-
-
 
             marker.addListener('click', function() {
-  
+ 
+           
+
+
               //alert(obj[index].ID + " " + marker.LineName);
               var id = obj[index].ID;
               
