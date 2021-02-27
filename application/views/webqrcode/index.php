@@ -112,12 +112,13 @@
                 var img =  $("#ImgProfile").attr("src");
                 var textpf =  $("#TextProfile").text();
                 var textbtndata   = lat+long+img+textpf; 
-              swal({
+              
+              /*swal({
                   title: "สำเร็จ",
                   text: textbtndata,
                   icon: "success",
                   button: "ปิด",
-              }); 
+              }); */
 
               $.post("https://environment.webclient.me/index.php/Qrcontroller/insertlocation",{
                   BinID : BinID,
