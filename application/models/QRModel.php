@@ -43,6 +43,14 @@
       return $this->envdb->query("SELECT * FROM `Env_Collection` WHERE `ID` = ".$id)->result();
     }
 
+    public function GetDataBinByID($id)
+    {
+
+      $this->envdb = $this->load->database("envdb",true);
+      return $this->envdb->query("SELECT * FROM Bin WHERE id = ".$id)->result();
+
+    }
+
      
     
 } 

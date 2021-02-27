@@ -71,8 +71,19 @@
 
               $("#btnsave").hide();
               liff.closeWindow();
+              return false;
+
             }
 
+            $.post("https://environment.webclient.me/index.php/Qrcontroller/GetDataBinByID",
+              {
+                ID : BinID
+              },function(data){
+
+                console.log(data);
+
+
+            });
 
 
 
@@ -84,8 +95,7 @@
 
 
 
-
-
+ 
 
 
 
