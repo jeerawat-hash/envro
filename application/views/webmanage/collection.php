@@ -258,20 +258,36 @@ function initMap() {
 
 
 
-  var html = "";
-
-
-  html += "<tr>"+
-          "<td>jee</td>"+
-          "<td>1</td>"+
-          "<td>2</td>"+
-          "<td>3</td></tr>";
-
-  $("#pickup-detail").html(html);
 
 
 
 
+
+  setInterval(function(){ 
+
+      var html = "";
+
+
+
+      $.get("https://environment.webclient.me/index.php/Qrcontroller/GetDataSummary",function(data){
+
+        var obj = JSON.parse(data);
+          
+          console.log(obj);
+
+            html += "<tr>"+
+              "<td>jee</td>"+
+              "<td>1</td>"+
+              "<td>2</td>"+
+              "<td>3</td></tr>";
+
+
+      });
+
+      $("#pickup-detail").html(html);
+
+
+  }, 3000);
 
 
 
