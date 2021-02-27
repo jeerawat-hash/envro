@@ -222,6 +222,20 @@
 
 var map;
 function initMap() {
+
+
+
+
+    const haightAshbury = { lat: 13.59934, lng: 100.59675 };
+        map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 12,
+          center: haightAshbury,
+          mapTypeId: "terrain",
+        });
+
+
+
+  /*
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 13.59934, lng: 100.59675},
     zoom: 12,
@@ -306,7 +320,10 @@ function initMap() {
             }
           ]
  
-  });
+  }); */
+
+
+
    
     
   
