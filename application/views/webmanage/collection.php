@@ -311,7 +311,7 @@ function initMap() {
               });
             });
             
-        //clickroute(parseFloat(obj[index].Lat),parseFloat(obj[index].Lot));
+        clickroute(parseFloat(obj[index].Lat),parseFloat(obj[index].Lot));
       }
 
       });
