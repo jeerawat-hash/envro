@@ -187,15 +187,15 @@
 
         <div class="container">
           <div class="row">
-            <div class="col-6">Name</div>
-            <div class="col-6">ผู้จัดเก็บ <label id="Name"></label></div>
+            <div class="col-6">ผู้จัดเก็บ</div>
+            <div class="col-6"><label id="Name"></label></div>
           </div>
           <div class="row text-center">
             <div class="col-12"><img src="" id="img" width="30%"></div>
           </div>
           <div class="row">
-            <div class="col-6">รายละเอียด</div>
-            <div class="col-6"><label id="Comment"></label></div>
+            <div class="col-3">รายละเอียด</div>
+            <div class="col-9"><label id="Comment"></label></div>
           </div>
           <div class="row">
             <div class="col-6">Lat</div>
@@ -313,7 +313,7 @@ function initMap() {
                 $("#exampleModal").find("#Lot").text(Lot);
                 $("#exampleModal").find("#Comment").text(Name + " น้ำหนัก "+ Weight + "กิโลกรัม");
                 $("#exampleModal").modal("show");
-                
+
               });
             });
             
