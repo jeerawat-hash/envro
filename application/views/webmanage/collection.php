@@ -57,7 +57,7 @@
 								 
 								<div class="card-body">
 									<div class="table-responsive">
-										<table id="basic-datatables" class="display table table-striped table-hover" >
+										<table id="pickup" class="display table table-striped table-hover" >
 											<thead>
 												<tr>
 													<th> <center>  ผู้จัดเก็บ  </center>   </th>
@@ -67,16 +67,10 @@
 												</tr>
 											</thead>
 											 
-											<tbody> 
+											<tbody id="pickup-detail"> 
 
                         
-												<tr>
-													<td>Jonas Alexander</td>
-													<td>Developer</td>
-													<td>San Francisco</td>
-													<td>30</td> 
-												</tr>  
-
+									
 
 											</tbody>
 										</table>
@@ -319,6 +313,34 @@ function initMap() {
 
 
   }, 3000);
+
+
+
+
+
+  var html = "";
+
+
+  html += "<tr>"+
+          "<td>jee</td>"+
+          "<td>1</td>"+
+          "<td>2</td>"+
+          "<td>3</td></tr>";
+
+  $("#pickup-detail").html(html);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  
 
