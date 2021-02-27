@@ -57,8 +57,48 @@
              $("#ImgProfile").attr("src",profile.pictureUrl);
             // $("#userId").attr("value",profile.userId);
            // $("#LineID").attr("value",profile.userId);
-             
-            $("#btnsave").hide();
+               
+           var BinID = $("#BinID").val();
+            
+
+            if (BinID == 0) {
+
+              swal({
+                  title: "ผิดพลาด",
+                  text: "กรุณาลองใหม่ภายหลัง",
+                  icon: "error",
+                  button: "ปิด",
+              }); 
+
+              $("#btnsave").hide();
+              liff.closeWindow();
+            }else{
+
+              $("#btnsave").show(); 
+              
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           $("#btnsave").hide();
            $("#btnsave").on("click",function(){  
                 var long =   $("#longitude").val();
   			         var lat =   $("#latitude").val(); 
@@ -96,10 +136,6 @@
 
 
 
-
-           var a = $("#BinID").val();
-
-            alert(a);
 
 
 
