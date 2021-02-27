@@ -321,11 +321,9 @@ function initMap() {
  
   }); */
 
+var markersArray = [];
 
-
-   
-    
-  
+ 
 
   setInterval(function(){ 
      
@@ -334,6 +332,12 @@ function initMap() {
 
       var obj = JSON.parse(data);
 
+
+      for (var i = 0; i < markersArray.length; i++ ) {
+          markersArray[i].setMap(null);
+      }
+      markersArray.length = 0;
+ 
 
       for (let index = 0; index < obj.length; index++) { 
         
@@ -367,6 +371,9 @@ function initMap() {
                   anchor: new google.maps.Point(0, 0) // anchor
               } */
         }); 
+
+
+        markersArray.push(marker);
 
 
             marker.addListener('click', function() {
