@@ -56,7 +56,7 @@
 							<div class="card">
 								 
 								<div class="card-body">
-									<div class="table-responsive">
+									<div class="table-responsive text-center">
 										<table id="pickup" class="display table table-striped table-hover" >
 											<thead>
 												<tr>
@@ -89,66 +89,7 @@
 
 
 				</div>
-			</div>
- <!-- Modal -->
-  <div class="modal fade" id="myModalaa" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header" style = "background-color: #F5CA0C;" >
-        	 <h4 class="modal-title">สร้างกลุ่มงานบริการ</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          
-        </div>
-        <div class="modal-body">
-          <p >
-          	 <div class="form-group form-inline"   >
-												<label for="inlineinput" class="col-md-3 col-form-label"  >ชื่อ</label>
-												<div class="col-md-9 p-0">
-													<input type="text" class="form-control input-full" id="inlineinput" placeholder="กรุณากรอกชื่อ">
-												</div>
-		     </div>
-		     <div class="form-group form-inline">
-												<label for="inlineinput" class="col-md-3 col-form-label" style="text-align:right; ">รายละเอียด</label>
-												<div class="col-md-9 p-0">
-													<input type="text" class="form-control input-full" id="inlineinput" placeholder="กรุณากรอกรายละเอียด">
-												</div>
-		     </div>
-		     <div class="form-group form-inline">
-												<label for="inlineinput" class="col-md-3 col-form-label" style="text-align:right; ">Hightlight</label>
-												<div class="col-md-9 p-0">
-													<select class="form-control-sm" id="selectHightlight">
-													<option>กรุณาเลือกกลุ่ม</option>
-													<option>2</option>
-													<option>3</option>
-													<option>4</option>
-													<option>5</option>
-												</select>  
-												</div>
-		     </div>
-		     <div class="form-group form-inline">
-												<label for="inlineinput" class="col-md-3 col-form-label" style="text-align:right; ">เวลาปฏิบัติงาน</label>
-												<div class="col-md-4 p-0">
-													<input type="time" class="form-control input-full" id="inlineinput" placeholder="เวลาเริ่ม">
-												</div>
-												<div class="col-md-5 p-0">
-													<input type="time" class="form-control input-full" id="inlineinput" placeholder="เวลาออก">
-												</div>
-		     </div>
-		     
-		  </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-success" data-dismiss="modal"> <span class="btn-label"><i class="fa flaticon-success"></i> </span>บันทึก</button>
-          <button type="button" class="btn btn-danger" data-dismiss="modal"><span class="btn-label"><i class="fa flaticon-error"></i> 
-				  </span>ยกเลิก</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  <!-- END MODAL -- >
+			</div> 
 		</div>
 		 <!--- MODAL -->
  
