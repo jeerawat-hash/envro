@@ -358,6 +358,7 @@ function initMap() {
           map: map,
           label : "aaaa",
           title: "qqqq",
+          animation: google.maps.Animation.DROP,
           LineName : obj[index].Name,
           Image : obj[index].Image,
           icon : svgMarker,
@@ -372,6 +373,17 @@ function initMap() {
 
 
             marker.addListener('click', function() {
+
+              ////
+              if (marker.getAnimation() !== null) {
+                marker.setAnimation(null);
+              } else {
+                marker.setAnimation(google.maps.Animation.BOUNCE);
+              }
+              ///
+
+
+
               //alert(obj[index].ID + " " + marker.LineName);
               var id = obj[index].ID;
               
