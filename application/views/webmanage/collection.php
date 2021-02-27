@@ -275,12 +275,16 @@ function initMap() {
           
           console.log(obj);
 
-            html += "<tr>"+
-              "<td>jee</td>"+
-              "<td>1</td>"+
-              "<td>2</td>"+
-              "<td>3</td></tr>";
+          for (var i = 0; i < obj.length; i++) {
 
+            html += "<tr>"+
+              "<td>"+obj[i].FName+"</td>"+
+              "<td>"+obj[i].StampDate+"</td>"+
+              "<td>"+obj[i].CountWei+" ถัง</td>"+
+              "<td>"+obj[i].SumWei+" กิโลกรัม</td></tr>";
+
+          }
+ 
 
       });
 
