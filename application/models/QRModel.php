@@ -55,6 +55,15 @@
 
     }
 
+    public function GetDataSummary()
+    {
+
+      $this->envdb = $this->load->database("envdb",true);
+      return $this->envdb->query(" SELECT a.FName,a.StampDate,sum(b.Weight) as SumWei,count(b.Weight) as CountWei FROM Env_Collection a
+JOIN Bin b on a.BinID = b.ID group by a.UserID,a.FName,a.StampDate ")->result();
+
+
+    }
      
     
 } 

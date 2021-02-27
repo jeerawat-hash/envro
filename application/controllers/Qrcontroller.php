@@ -50,6 +50,14 @@ class Qrcontroller extends CI_Controller
 
   }
 
+  public function GetDataSummary()
+  {
+
+
+    echo json_encode($this->QRModel->GetDataSummary());
+
+
+  }
 
 
 
