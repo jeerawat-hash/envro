@@ -272,11 +272,12 @@ function initMap() {
               "<td>"+obj[i].SumWei+" กิโลกรัม</td></tr>";
 
           }
- 
+          
+           $("#pickup-detail").html(html);
 
       });
 
-      $("#pickup-detail").html(html);
+     
 
 
  
