@@ -60,39 +60,24 @@
 										<table id="basic-datatables" class="display table table-striped table-hover" >
 											<thead>
 												<tr>
-													<th> <center>  -  </center>   </th>
-													<th> <center>  -    </center> </th>
-													<th> <center>  - </center>  </th>
-													<th> <center>  -   </center>  </th>
-													<th> <center>  -     </center>  </th>
-													<th> <center>  - </center> </th>
-													<th> <center>  -  </center> </th>
+													<th> <center>  ผู้จัดเก็บ  </center>   </th>
+													<th> <center>  วันที่    </center> </th>
+													<th> <center>  จำนวนการเก็บ </center>  </th>
+													<th> <center>  น้ำหนักรวม   </center>  </th> 
 												</tr>
 											</thead>
 											 
 											<tbody> 
+
+                        
 												<tr>
 													<td>Jonas Alexander</td>
 													<td>Developer</td>
 													<td>San Francisco</td>
-													<td>30</td>
-													<td>2010/07/14</td>
-													<td>$86,500</td>
-													<td ><button class="btn btn-danger">
-												<span class="btn-label"><i class="fa flaticon-interface-5"></i> </span>  
-											</button> </td>
-												</tr> 
-												<tr>
-													<td>Donna Snider</td>
-													<td>Customer Support</td>
-													<td>New York</td>
-													<td>27</td>
-													<td>2011/01/25</td>
-													<td>$112,000</td>
-													<td ><button class="btn btn-danger">
-												<span class="btn-label"><i class="fa flaticon-interface-5"></i> </span>  
-											</button> </td>
-												</tr>
+													<td>30</td> 
+												</tr>  
+
+
 											</tbody>
 										</table>
 									</div>
@@ -102,6 +87,13 @@
 
  
 					</div>
+
+
+
+
+
+
+
 				</div>
 			</div>
  <!-- Modal -->
