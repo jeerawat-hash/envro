@@ -338,6 +338,9 @@ function initMap() {
 
       setMapOnAll(null);
 
+      var markers = [];
+
+
       for (let index = 0; index < obj.length; index++) { 
         
 
@@ -354,7 +357,7 @@ function initMap() {
         };
 
 
-        var marker = new google.maps.Marker({
+         marker = new google.maps.Marker({
           position: {lat : parseFloat(obj[index].Lat) ,lng : parseFloat(obj[index].Lot) },
           map: map,
           label : "aaaa",
