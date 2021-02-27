@@ -311,7 +311,7 @@ function initMap() {
                 $("#exampleModal").find("#Name").text(FName);
                 $("#exampleModal").find("#Lat").text(Lat);
                 $("#exampleModal").find("#Lot").text(Lot);
-                $("#exampleModal").find("#Comment").text(Name + " น้ำหนัก "+ Weight + "กิโลกรัม");
+                $("#exampleModal").find("#Comment").text(Name + " น้ำหนัก "+ Weight + " กิโลกรัม");
                 $("#exampleModal").modal("show");
 
               });
