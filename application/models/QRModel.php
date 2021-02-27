@@ -34,7 +34,7 @@
     public function getlocation()
     {
       $this->envdb = $this->load->database("envdb",true);
-      return $this->envdb->query(" SELECT a.*,b.* FROM Env_Collection a 
+      return $this->envdb->query(" SELECT a.ID as TransID,a.*,b.* FROM Env_Collection a 
                                   JOIN Bin b on a.BinID = b.ID
                                   where a.Lat != ''  ")->result();
     }
@@ -44,7 +44,7 @@
       $this->envdb = $this->load->database("envdb",true);
       return $this->envdb->query("SELECT a.*,b.* FROM Env_Collection a 
                                   JOIN Bin b on a.BinID = b.ID
-                                  where a.ID = ".$id)->result();
+                                  where a.ID = ".$id )->result();
     }
 
     public function GetDataBinByID($id)

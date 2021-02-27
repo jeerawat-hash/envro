@@ -273,7 +273,7 @@ function initMap() {
           LineName : obj[index].FName,
           Image : obj[index].Image,
           icon : svgMarker,
-          ID : obj[index].ID/*,
+          ID : obj[index].TransID/*,
           icon: {
                   url: obj[index].Image, // url
                   scaledSize: new google.maps.Size(50, 50), // scaled size
@@ -290,7 +290,7 @@ function initMap() {
  
             
               //alert(obj[index].ID + " " + marker.LineName);
-              var id = obj[index].ID;
+              var id = obj[index].TransID;
               
               $.post("https://environment.webclient.me/index.php/Qrcontroller/GetDatabyID",{
                 id : id
