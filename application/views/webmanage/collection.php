@@ -325,6 +325,7 @@ function initMap() {
         var marker = new google.maps.Marker({
           position: {lat : parseFloat(obj[index].Lat) ,lng : parseFloat(obj[index].Lot) },
           map: map,
+          label : "aaaa",
           title: "qqqq",
           LineName : obj[index].Name,
           Image : obj[index].Image,
