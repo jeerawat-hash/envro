@@ -234,6 +234,13 @@ function initMap() {
         });
 
 
+        poly = new google.maps.Polyline({
+          strokeColor: "#000000",
+          strokeOpacity: 1.0,
+          strokeWeight: 3,
+        });
+        poly.setMap(map);
+
 
   /*
   map = new google.maps.Map(document.getElementById('map'), {
@@ -413,18 +420,7 @@ function initMap() {
 
 
 
-        const flightPlanCoordinates = [
-          { lat: 13.580080336130463, lng: 100.6569794227285 },
-          { lat: 21.291, lng: -157.821 }
-        ];
-        const flightPath = new google.maps.Polyline({
-          path: flightPlanCoordinates,
-          geodesic: true,
-          strokeColor: "#FF0000",
-          strokeOpacity: 1.0,
-          strokeWeight: 2,
-        });
-        flightPath.setMap(map);
+         
 
 
 
