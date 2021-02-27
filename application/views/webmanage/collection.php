@@ -234,12 +234,6 @@ function initMap() {
         });
 
 
-        poly = new google.maps.Polyline({
-          strokeColor: "#000000",
-          strokeOpacity: 1.0,
-          strokeWeight: 3,
-        });
-        poly.setMap(map);
 
 
   /*
@@ -380,6 +374,15 @@ function initMap() {
             marker.addListener('click', function() {
  
            
+              const flightPath = new google.maps.Polyline({
+                path: {lat : parseFloat(obj[index].Lat) ,lng : parseFloat(obj[index].Lot) },
+                geodesic: true,
+                strokeColor: "#FF0000",
+                strokeOpacity: 1.0,
+                strokeWeight: 2,
+              });
+              flightPath.setMap(map);
+
 
 
               //alert(obj[index].ID + " " + marker.LineName);
