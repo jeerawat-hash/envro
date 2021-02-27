@@ -60,38 +60,49 @@
              
             $("#btnsave").hide();
            $("#btnsave").on("click",function(){  
-              var long =   $("#longitude").val();
-			  var lat =   $("#latitude").val(); 
-              var img =  $("#ImgProfile").attr("src");
-              var textpf =  $("#TextProfile").text();
-              var textbtndata   = lat+long+img+textpf; 
-            swal({
-                title: "สำเร็จ",
-                text: textbtndata,
-                icon: "success",
-                button: "ปิด",
-            }); 
+                var long =   $("#longitude").val();
+  			         var lat =   $("#latitude").val(); 
+                var img =  $("#ImgProfile").attr("src");
+                var textpf =  $("#TextProfile").text();
+                var textbtndata   = lat+long+img+textpf; 
+              swal({
+                  title: "สำเร็จ",
+                  text: textbtndata,
+                  icon: "success",
+                  button: "ปิด",
+              }); 
 
-            $.post("https://environment.webclient.me/index.php/Qrcontroller/insertlocation",{
-                Latitude : lat,
-                Longitude : long,
-                Img : img,
-                Textpf : textpf
-            },function(data){
-                 if(data == 1 ){
-                    swal({
-                title: "สำเร็จ",
-                text: "บันทึกผลสำเร็จกำลังปิดแอพพลิเคชั่น....",
-                icon: "success",
-                button: false,
-                     }); 
-                    
+              $.post("https://environment.webclient.me/index.php/Qrcontroller/insertlocation",{
+                  Latitude : lat,
+                  Longitude : long,
+                  Img : img,
+                  Textpf : textpf
+              },function(data){
+                   if(data == 1 ){
+                      swal({
+                  title: "สำเร็จ",
+                  text: "บันทึกผลสำเร็จกำลังปิดแอพพลิเคชั่น....",
+                  icon: "success",
+                  button: false,
+                       }); 
+                      
 
-                     setTimeout(function(){ liff.closeWindow(); }, 2000);
-                    
-                 }
-            });  
+                       setTimeout(function(){ liff.closeWindow(); }, 2000);
+                      
+                   }
+              });  
             });
+
+
+
+
+
+           var a = $("#BinID").val();
+
+            alert(a);
+
+
+
 
 
 
