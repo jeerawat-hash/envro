@@ -188,10 +188,14 @@
         <div class="container">
           <div class="row">
             <div class="col-6">Name</div>
-            <div class="col-6"><label id="Name"></label></div>
+            <div class="col-6">ผู้จัดเก็บ <label id="Name"></label></div>
+          </div>
+          <div class="row text-center">
+            <div class="col-12"><img src="" id="img" width="30%"></div>
           </div>
           <div class="row">
-            <div class="col-12"><img src="" id="img" width="30%"></div>
+            <div class="col-6">รายละเอียด</div>
+            <div class="col-6"><label id="Comment"></label></div>
           </div>
           <div class="row">
             <div class="col-6">Lat</div>
@@ -201,10 +205,7 @@
             <div class="col-6">Lot</div>
             <div class="col-6"><label id="Lot"></label></div>
           </div>
-          <div class="row">
-            <div class="col-6">Comment</div>
-            <div class="col-6"><label id="Comment"></label></div>
-          </div>
+          
         </div>
       </div>
       <div class="modal-footer">
@@ -267,9 +268,9 @@ function initMap() {
         var marker = new google.maps.Marker({
           position: {lat : parseFloat(obj[index].Lat) ,lng : parseFloat(obj[index].Lot) },
           map: map,
-          label : "ถังขยะ",
-          title: "ถังขยะ", 
-          LineName : obj[index].Name,
+          label : obj[index].Name,
+          title: obj[index].Name, 
+          LineName : obj[index].FName,
           Image : obj[index].Image,
           icon : svgMarker,
           ID : obj[index].ID/*,
@@ -301,13 +302,18 @@ function initMap() {
                 var Image = obj[0].Image;
                 var Comment = obj[0].Comment;
                 var Name = obj[0].Name;
+                var FName = obj[0].FName;
+                var Weight = obj[0].Weight;
 
+ 
                 $("#exampleModal").find("#exampleModalLabel").text(Name);
                 $("#exampleModal").find("#img").attr("src",Image);
+                $("#exampleModal").find("#Name").text(FName);
                 $("#exampleModal").find("#Lat").text(Lat);
                 $("#exampleModal").find("#Lot").text(Lot);
-                $("#exampleModal").find("#Comment").text(Comment);
+                $("#exampleModal").find("#Comment").text(Name + " น้ำหนัก "+ Weight + "กิโลกรัม");
                 $("#exampleModal").modal("show");
+                
               });
             });
             
