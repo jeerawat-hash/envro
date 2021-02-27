@@ -23,7 +23,7 @@
 
       $this->envdb = $this->load->database("envdb",true);
 
-      $this->envdb->query("INSERT INTO `Env_Collection` (`ID`, `BinID`, `Name`, `Image`, `StampDate`, `Lat`, `Lot`, `Comment`)
+      $this->envdb->query("INSERT INTO `Env_Collection` (`ID`, `BinID`, `FName`, `Image`, `StampDate`, `Lat`, `Lot`, `Comment`)
        VALUES 
       (NULL , '".$BinID."', '".$Textpf."', '".$Img."', '".date("Y-m-d")."', '".$Latitude."', '".$Longitude."', 'BIT 1 ')");
 
