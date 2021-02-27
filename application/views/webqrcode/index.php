@@ -80,7 +80,8 @@
                 ID : BinID
               },function(data){
 
-                console.log(data);
+                var obj = JSON.parse(data);
+                console.log(obj);
 
 
             });

@@ -42,8 +42,8 @@ class Qrcontroller extends CI_Controller
   public function GetDataBinByID()
   {
 
-    print_r($_POST);
-    //echo json_encode($this->QRModel->GetDataBinByID($id));
+    #print_r($_POST);
+    echo json_encode($this->QRModel->GetDataBinByID($_POST["ID"]));
 
   }
 
