@@ -252,23 +252,11 @@ function initMap() {
 
 
 
-  }, 3000);
 
 
-
-
-
-
-
-
-
-
-  setInterval(function(){ 
 
       var html = "";
-
-
-
+ 
       $.get("https://environment.webclient.me/index.php/Qrcontroller/GetDataSummary",function(data){
 
         var obj = JSON.parse(data);
@@ -291,10 +279,17 @@ function initMap() {
       $("#pickup-detail").html(html);
 
 
+ 
+
+
   }, 3000);
 
 
 
+
+
+
+ 
 
 
 
