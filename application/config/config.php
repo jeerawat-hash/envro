@@ -23,7 +23,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'https://environment.webclient.me/';
+switch ($_SERVER["SERVER_NAME"]) {
+	case 'webclient.me':
+		$config['base_url'] = 'https://environment.webclient.me/';
+		break;
+	default:
+		$config['base_url'] = 'http://localhost/ENV/';
+		break;
+}
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +42,7 @@ $config['base_url'] = 'https://environment.webclient.me/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
