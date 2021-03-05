@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 switch ($_SERVER["SERVER_NAME"]) {
-	case 'webclient.me':
+	case 'environment.webclient.me':
 		$config['base_url'] = 'https://environment.webclient.me/';
 		break;
 	default:
