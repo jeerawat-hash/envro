@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Atlantis Lite - Bootstrap 4 Admin Dashboard</title>
+	<title><?=$this->config->item('project').' | '.$FuncName;?></title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-	<link rel="icon" href="<?= base_url('ui/assets/img/icon.ico') ?>" type="image/x-icon"/>
+	<link rel="icon" href="<?=base_url('ui/assets/img/icon.ico')?>" type="image/x-icon"/>
 
 	<!-- Fonts and icons -->
-	<script src="<?= base_url('ui/assets/js/plugin/webfont/webfont.min.js') ?>"></script>
+	<script src="<?=base_url('ui/assets/js/plugin/webfont/webfont.min.js')?>"></script>
 	<script>
 		WebFont.load({
 			google: {"families":["Lato:300,400,700,900"]},
-			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['<?= base_url('ui') ?>/assets/css/fonts.min.css']},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['<?=base_url('ui/assets/css/fonts.min.css')?>']},
 			active: function() {
 				sessionStorage.fonts = true;
 			}
@@ -19,20 +19,16 @@
 	</script>
 
 	<!-- CSS Files -->
-	<link rel="stylesheet" href="<?= base_url('ui/assets/css/bootstrap.min.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('ui/assets/css/atlantis.min.css') ?>">
+	<link rel="stylesheet" href="<?=base_url('ui/assets/css/bootstrap.min.css')?>">
+	<link rel="stylesheet" href="<?=base_url('ui/assets/css/atlantis.min.css')?>">
 
 	<!-- CSS Just for demo purpose, don't include it in your project -->
-	<link rel="stylesheet" href="<?= base_url('ui/assets/css/demo.css') ?>">
+	<link rel="stylesheet" href="<?=base_url('ui/assets/css/demo.css')?>">
 </head>
 <body>
 	<div class="wrapper">
-		<?php $this->view('Include/Header'); ?>
-
-		<!-- Sidebar -->
-		<?php $this->view('Include/Sidebar'); ?>
-		<!-- End Sidebar -->
-
+		<?php $this->view('Include/Header');?>
+		<?php $this->view('Include/Sidebar');?>
 		<div class="main-panel">
 			<div class="content">
 				<div class="panel-header bg-primary-gradient">
@@ -179,7 +175,7 @@
 														<tr>
 															<td>
 																<div class="flag">
-																	<img src="<?= base_url('ui') ?>/assets/img/flags/id.png" alt="indonesia">
+																	<img src="<?=base_url('ui')?>/assets/img/flags/id.png" alt="indonesia">
 																</div>
 															</td>
 															<td>Indonesia</td>
@@ -193,7 +189,7 @@
 														<tr>
 															<td>
 																<div class="flag">
-																	<img src="<?= base_url('ui') ?>/assets/img/flags/us.png" alt="united states">
+																	<img src="<?=base_url('ui')?>/assets/img/flags/us.png" alt="united states">
 																</div>
 															</td>
 															<td>USA</td>
@@ -207,7 +203,7 @@
 														<tr>
 															<td>
 																<div class="flag">
-																	<img src="<?= base_url('ui') ?>/assets/img/flags/au.png" alt="australia">
+																	<img src="<?=base_url('ui')?>/assets/img/flags/au.png" alt="australia">
 																</div>
 															</td>
 															<td>Australia</td>
@@ -221,7 +217,7 @@
 														<tr>
 															<td>
 																<div class="flag">
-																	<img src="<?= base_url('ui') ?>/assets/img/flags/ru.png" alt="russia">
+																	<img src="<?=base_url('ui')?>/assets/img/flags/ru.png" alt="russia">
 																</div>
 															</td>
 															<td>Russia</td>
@@ -235,7 +231,7 @@
 														<tr>
 															<td>
 																<div class="flag">
-																	<img src="<?= base_url('ui') ?>/assets/img/flags/cn.png" alt="china">
+																	<img src="<?=base_url('ui')?>/assets/img/flags/cn.png" alt="china">
 																</div>
 															</td>
 															<td>China</td>
@@ -249,7 +245,7 @@
 														<tr>
 															<td>
 																<div class="flag">
-																	<img src="<?= base_url('ui') ?>/assets/img/flags/br.png" alt="brazil">
+																	<img src="<?=base_url('ui')?>/assets/img/flags/br.png" alt="brazil">
 																</div>
 															</td>
 															<td>Brasil</td>
@@ -283,7 +279,7 @@
 								<div class="card-body pb-0">
 									<div class="d-flex">
 										<div class="avatar">
-											<img src="<?= base_url('ui') ?>/assets/img/logoproduct.svg" alt="..." class="avatar-img rounded-circle">
+											<img src="<?=base_url('ui')?>/assets/img/logoproduct.svg" alt="..." class="avatar-img rounded-circle">
 										</div>
 										<div class="flex-1 pt-1 ml-2">
 											<h6 class="fw-bold mb-1">CSS</h6>
@@ -296,7 +292,7 @@
 									<div class="separator-dashed"></div>
 									<div class="d-flex">
 										<div class="avatar">
-											<img src="<?= base_url('ui') ?>/assets/img/logoproduct.svg" alt="..." class="avatar-img rounded-circle">
+											<img src="<?=base_url('ui')?>/assets/img/logoproduct.svg" alt="..." class="avatar-img rounded-circle">
 										</div>
 										<div class="flex-1 pt-1 ml-2">
 											<h6 class="fw-bold mb-1">J.CO Donuts</h6>
@@ -309,7 +305,7 @@
 									<div class="separator-dashed"></div>
 									<div class="d-flex">
 										<div class="avatar">
-											<img src="<?= base_url('ui') ?>/assets/img/logoproduct3.svg" alt="..." class="avatar-img rounded-circle">
+											<img src="<?=base_url('ui')?>/assets/img/logoproduct3.svg" alt="..." class="avatar-img rounded-circle">
 										</div>
 										<div class="flex-1 pt-1 ml-2">
 											<h6 class="fw-bold mb-1">Ready Pro</h6>
@@ -333,7 +329,7 @@
 									<div class="card-list">
 										<div class="item-list">
 											<div class="avatar">
-												<img src="<?= base_url('ui') ?>/assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
+												<img src="<?=base_url('ui')?>/assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
 											</div>
 											<div class="info-user ml-3">
 												<div class="username">Jimmy Denis</div>
@@ -345,7 +341,7 @@
 										</div>
 										<div class="item-list">
 											<div class="avatar">
-												<img src="<?= base_url('ui') ?>/assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle">
+												<img src="<?=base_url('ui')?>/assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle">
 											</div>
 											<div class="info-user ml-3">
 												<div class="username">Chad</div>
@@ -357,7 +353,7 @@
 										</div>
 										<div class="item-list">
 											<div class="avatar">
-												<img src="<?= base_url('ui') ?>/assets/img/talha.jpg" alt="..." class="avatar-img rounded-circle">
+												<img src="<?=base_url('ui')?>/assets/img/talha.jpg" alt="..." class="avatar-img rounded-circle">
 											</div>
 											<div class="info-user ml-3">
 												<div class="username">Talha</div>
@@ -369,7 +365,7 @@
 										</div>
 										<div class="item-list">
 											<div class="avatar">
-												<img src="<?= base_url('ui') ?>/assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle">
+												<img src="<?=base_url('ui')?>/assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle">
 											</div>
 											<div class="info-user ml-3">
 												<div class="username">John Doe</div>
@@ -381,7 +377,7 @@
 										</div>
 										<div class="item-list">
 											<div class="avatar">
-												<img src="<?= base_url('ui') ?>/assets/img/talha.jpg" alt="..." class="avatar-img rounded-circle">
+												<img src="<?=base_url('ui')?>/assets/img/talha.jpg" alt="..." class="avatar-img rounded-circle">
 											</div>
 											<div class="info-user ml-3">
 												<div class="username">Talha</div>
@@ -393,7 +389,7 @@
 										</div>
 										<div class="item-list">
 											<div class="avatar">
-												<img src="<?= base_url('ui') ?>/assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
+												<img src="<?=base_url('ui')?>/assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
 											</div>
 											<div class="info-user ml-3">
 												<div class="username">Jimmy Denis</div>
@@ -550,52 +546,52 @@
 					</div>
 				</div>
 			</div>
-		<?php $this->view('Include/Footer'); ?>
+		<?php $this->view('Include/Footer');?>
 		</div>
 		
-		<?php $this->view('Include/Custom'); ?>
+		<?php $this->view('Include/Custom');?>
 	</div>
 	<!--   Core JS Files   -->
-	<script src="<?= base_url('ui/assets/js/core/jquery.3.2.1.min.js') ?>"></script>
-	<script src="<?= base_url('ui/assets/js/core/popper.min.js') ?>"></script>
-	<script src="<?= base_url('ui/assets/js/core/bootstrap.min.js') ?>"></script>
+	<script src="<?=base_url('ui/assets/js/core/jquery.3.2.1.min.js')?>"></script>
+	<script src="<?=base_url('ui/assets/js/core/popper.min.js')?>"></script>
+	<script src="<?=base_url('ui/assets/js/core/bootstrap.min.js')?>"></script>
 
 	<!-- jQuery UI -->
-	<script src="<?= base_url('ui/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js') ?>"></script>
-	<script src="<?= base_url('ui/assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js') ?>"></script>
+	<script src="<?=base_url('ui/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js')?>"></script>
+	<script src="<?=base_url('ui/assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js')?>"></script>
 
 	<!-- jQuery Scrollbar -->
-	<script src="<?= base_url('ui/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js') ?>"></script>
+	<script src="<?=base_url('ui/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js')?>"></script>
 
 
 	<!-- Chart JS -->
-	<script src="<?= base_url('ui/assets/js/plugin/chart.js/chart.min.js') ?>"></script>
+	<script src="<?=base_url('ui/assets/js/plugin/chart.js/chart.min.js')?>"></script>
 
 	<!-- jQuery Sparkline -->
-	<script src="<?= base_url('ui/assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js') ?>"></script>
+	<script src="<?=base_url('ui/assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js')?>"></script>
 
 	<!-- Chart Circle -->
-	<script src="<?= base_url('ui/assets/js/plugin/chart-circle/circles.min.js') ?>"></script>
+	<script src="<?=base_url('ui/assets/js/plugin/chart-circle/circles.min.js')?>"></script>
 
 	<!-- Datatables -->
-	<script src="<?= base_url('ui/assets/js/plugin/datatables/datatables.min.js') ?>"></script>
+	<script src="<?=base_url('ui/assets/js/plugin/datatables/datatables.min.js')?>"></script>
 
 	<!-- Bootstrap Notify -->
-	<script src="<?= base_url('ui/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js') ?>"></script>
+	<script src="<?=base_url('ui/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js')?>"></script>
 
 	<!-- jQuery Vector Maps -->
-	<script src="<?= base_url('ui/assets/js/plugin/jqvmap/jquery.vmap.min.js') ?>"></script>
-	<script src="<?= base_url('ui/assets/js/plugin/jqvmap/maps/jquery.vmap.world.js') ?>"></script>
+	<script src="<?=base_url('ui/assets/js/plugin/jqvmap/jquery.vmap.min.js')?>"></script>
+	<script src="<?=base_url('ui/assets/js/plugin/jqvmap/maps/jquery.vmap.world.js')?>"></script>
 
 	<!-- Sweet Alert -->
-	<script src="<?= base_url('ui/assets/js/plugin/sweetalert/sweetalert.min.js') ?>"></script>
+	<script src="<?=base_url('ui/assets/js/plugin/sweetalert/sweetalert.min.js')?>"></script>
 
 	<!-- Atlantis JS -->
-	<script src="<?= base_url('ui/assets/js/atlantis.min.js') ?>"></script>
+	<script src="<?=base_url('ui/assets/js/atlantis.min.js')?>"></script>
 
 	<!-- Atlantis DEMO methods, don't include it in your project! -->
-	<script src="<?= base_url('ui/assets/js/setting-demo.js') ?>"></script>
-	<script src="<?= base_url('ui/assets/js/demo.js') ?>"></script>
+	<script src="<?=base_url('ui/assets/js/setting-demo.js')?>"></script>
+	<script src="<?=base_url('ui/assets/js/demo.js')?>"></script>
 	<script>
 		Circles.create({
 			id:'circles-1',
