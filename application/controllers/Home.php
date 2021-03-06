@@ -2,13 +2,20 @@
 
 class Home extends CI_Controller {
 
+	var $V;
+
 	function __construct()
 	{
 		parent::__construct();
+		$this->V = array('Class' => 'Home','ClassName' => 'หน้าหลัก');
 	}
 
 	public function index()
 	{
-		$this->load->view('Home');
+		$FT = 'Home';
+		$this->V['FuncID'] = $FT;
+		$this->V['FuncName'] = 'หน้าหลัก';
+		$this->V['Description'] = '';
+		$this->load->view($FT, $this->V);
 	}
 }
