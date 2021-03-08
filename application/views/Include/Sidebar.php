@@ -87,17 +87,17 @@ $FA = 'class="active"';
                                 </ul>
                             </div>
                         </li>
-                        <li class="nav-item <?php if ($C == 'System') echo $CA; ?>">
+                        <li class="nav-item <?php if ($C == 'Config') echo $CA; ?>">
                             <a data-toggle="collapse" href="#Grp3">
                                 <i class="fas fa-layer-group"></i>
                                 <p>จัดการข้อมูลระบบ</p>
                                 <span class="caret"></span>
                             </a>
-                            <div class="collapse <?php if ($C == 'System') echo $CS; ?>" id="Grp3">
+                            <div class="collapse <?php if ($C == 'Config') echo $CS; ?>" id="Grp3">
                                 <ul class="nav nav-collapse">
-                                    <li <?php if ($F == 'System/User') echo $FA; ?>><a href="<?= base_url('System/User') ?>"><span class="sub-item">ตารางแสดงผลผู้ใช้งาน</span></a></li>
-                                    <li <?php if ($F == 'System/Car') echo $FA; ?>><a href="<?= base_url('System/Car') ?>"><span class="sub-item">ตารางแสดงผลข้อมูลรถ</span></a></li>
-                                    <li <?php if ($F == 'System/Trash') echo $FA; ?>><a href="<?= base_url('System/Trash') ?>"><span class="sub-item">ตารางแสดงข้อมูลถังขยะ</span></a></li>
+                                    <li <?php if ($F == 'Config/User') echo $FA; ?>><a href="<?= base_url('Config/User') ?>"><span class="sub-item">ตารางแสดงผลผู้ใช้งาน</span></a></li>
+                                    <li <?php if ($F == 'Config/Car') echo $FA; ?>><a href="<?= base_url('Config/Car') ?>"><span class="sub-item">ตารางแสดงผลข้อมูลรถ</span></a></li>
+                                    <li <?php if ($F == 'Config/Trash') echo $FA; ?>><a href="<?= base_url('Config/Trash') ?>"><span class="sub-item">ตารางแสดงข้อมูลถังขยะ</span></a></li>
                                 </ul>
                             </div>
                         </li>

@@ -1,14 +1,14 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class System extends CI_Controller {
+class Config extends CI_Controller {
 
 	var $V;
 
 	function __construct()
 	{
 		parent::__construct();
-		$this->V = array('Class' => 'System','ClassName' => 'จัดการข้อมูลระบบ');
+		$this->V = array('Class' => 'Config','ClassName' => 'จัดการข้อมูลระบบ');
 	}
 
 	public function index()
@@ -18,7 +18,7 @@ class System extends CI_Controller {
 
 	public function User()
 	{
-		$FT = 'System/User';
+		$FT = 'Config/User';
 		$this->V['FuncID'] = $FT;
 		$this->V['FuncName'] = 'ตารางแสดงผลผู้ใช้งาน';
 		$this->V['Description'] = '';
@@ -27,7 +27,7 @@ class System extends CI_Controller {
 
 	public function Car()
 	{
-		$FT = 'System/Car';
+		$FT = 'Config/Car';
 		$this->V['FuncID'] = $FT;
 		$this->V['FuncName'] = 'ตารางแสดงผลข้อมูลรถ';
 		$this->V['Description'] = '';
@@ -36,7 +36,7 @@ class System extends CI_Controller {
 
 	public function Trash()
 	{
-		$FT = 'System/Trash';
+		$FT = 'Config/Trash';
 		$this->V['FuncID'] = $FT;
 		$this->V['FuncName'] = 'ตารางแสดงข้อมูลถังขยะ';
 		$this->V['Description'] = '';
