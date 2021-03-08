@@ -1,12 +1,6 @@
 <?php
 $C = $Class;
-$F = $FuncID;
-// $UID = $this->S['ID'];
-// $G = $this->S['Group'];
-// $STD = $this->S['Student'];
-// $EMP = $this->S['Employee'];
-// $Pic = $this->S['ProfilePicture'];
-// $FullName = $this->S['FirstName'].' '.$this->S['LastName'];
+$F = $this->uri->uri_string();
 $CA = 'active submenu';
 $CS = 'show';
 $FA = 'class="active"';

@@ -19,7 +19,6 @@ class Manage extends CI_Controller {
 	public function Maps()
 	{
 		$FT = 'Manage/Maps';
-		$this->V['FuncID'] = $FT;
 		$this->V['FuncName'] = 'แผนที่การจัดเก็บ';
 		$this->load->view($FT, $this->V);
 	}
@@ -27,7 +26,6 @@ class Manage extends CI_Controller {
 	public function Collect()
 	{
 		$FT = 'Manage/Collect';
-		$this->V['FuncID'] = $FT;
 		$this->V['FuncName'] = 'ตารางแสดงผลการจัดเก็บ';
 		$this->load->view($FT, $this->V);
 	}
@@ -35,7 +33,6 @@ class Manage extends CI_Controller {
 	public function Group()
 	{
 		$FT = 'Manage/Group';
-		$this->V['FuncID'] = $FT;
 		$this->V['FuncName'] = 'จัดกลุ่มผู้ใช้และรถ';
 		$this->load->view($FT, $this->V);
 	}

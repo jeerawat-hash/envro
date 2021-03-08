@@ -13,9 +13,7 @@ class Home extends CI_Controller {
 	public function index()
 	{
 		$FT = 'Home';
-		$this->V['FuncID'] = $FT;
 		$this->V['FuncName'] = 'หน้าหลัก';
-		$this->V['Description'] = '';
 		$this->load->view($FT, $this->V);
 	}
 }

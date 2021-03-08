@@ -16,7 +16,7 @@
 								<i class="flaticon-right-arrow"></i>
 							</li>
 							<li class="nav-item">
-								<a href="<?=base_url($FuncID)?>"><?=$FuncName;?></a>
+								<a href="<?=base_url($this->uri->uri_string())?>"><?=$FuncName;?></a>
 							</li>
 						</ul>
 					</div>

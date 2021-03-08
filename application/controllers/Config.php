@@ -19,7 +19,6 @@ class Config extends CI_Controller {
 	public function User()
 	{
 		$FT = 'Config/User';
-		$this->V['FuncID'] = $FT;
 		$this->V['FuncName'] = 'ตารางแสดงผลผู้ใช้งาน';
 		$this->load->view($FT, $this->V);
 	}
@@ -27,7 +26,6 @@ class Config extends CI_Controller {
 	public function Car()
 	{
 		$FT = 'Config/Car';
-		$this->V['FuncID'] = $FT;
 		$this->V['FuncName'] = 'ตารางแสดงผลข้อมูลรถ';
 		$this->load->view($FT, $this->V);
 	}
@@ -35,7 +33,6 @@ class Config extends CI_Controller {
 	public function Trash()
 	{
 		$FT = 'Config/Trash';
-		$this->V['FuncID'] = $FT;
 		$this->V['FuncName'] = 'ตารางแสดงข้อมูลถังขยะ';
 		$this->load->view($FT, $this->V);
 	}
