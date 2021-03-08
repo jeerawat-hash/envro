@@ -47,8 +47,8 @@ $FA = 'class="active"';
                             </a>
                             <div class="collapse <?php if ($C == 'Dashboard') echo $CS; ?>" id="dashboard">
                                 <ul class="nav nav-collapse">
-                                    <li <?php if ($F == 'Dashboard/V1') echo $FA; ?>><a href="<?= base_url() ?>"><span class="sub-item">ภาพรวม 1</span></a></li>
-                                    <li <?php if ($F == 'Dashboard/V2') echo $FA; ?>><a href="<?= base_url() ?>"><span class="sub-item">ภาพรวม 2</span></a></li>
+                                    <li <?php if ($F == 'Dashboard/V1') echo $FA; ?>><a href="<?= base_url('Dashboard/V1') ?>"><span class="sub-item">ภาพรวม 1</span></a></li>
+                                    <li <?php if ($F == 'Dashboard/V2') echo $FA; ?>><a href="<?= base_url('Dashboard/V2') ?>"><span class="sub-item">ภาพรวม 2</span></a></li>
                                 </ul>
                             </div>
                         </li>
@@ -66,10 +66,10 @@ $FA = 'class="active"';
                             </a>
                             <div class="collapse <?php if ($C == 'Stat') echo $CS; ?>" id="Grp1">
                                 <ul class="nav nav-collapse">
-                                    <li <?php if ($F == 'Stat/Trash') echo $FA; ?>><a href="<?= base_url() ?>"><span class="sub-item">จำนวนถังในระบบ</span></a></li>
-                                    <li <?php if ($F == 'Stat/Car') echo $FA; ?>><a href="<?= base_url() ?>"><span class="sub-item">จำนวนรถในระบบ</span></a></li>
-                                    <li <?php if ($F == 'Stat/Summary') echo $FA; ?>><a href="<?= base_url() ?>"><span class="sub-item">จำแนกผลรวมการจัดเก็บ</span></a></li>
-                                    <li <?php if ($F == 'Stat/Maintainance') echo $FA; ?>><a href="<?= base_url() ?>"><span class="sub-item">รายงานผลการส่งซ่อมบำรุง</span></a></li>
+                                    <li <?php if ($F == 'Stat/Trash') echo $FA; ?>><a href="<?= base_url('Stat/Trash') ?>"><span class="sub-item">จำนวนถังในระบบ</span></a></li>
+                                    <li <?php if ($F == 'Stat/Car') echo $FA; ?>><a href="<?= base_url('Stat/Car') ?>"><span class="sub-item">จำนวนรถในระบบ</span></a></li>
+                                    <li <?php if ($F == 'Stat/Summary') echo $FA; ?>><a href="<?= base_url('Stat/Summary') ?>"><span class="sub-item">จำแนกผลรวมการจัดเก็บ</span></a></li>
+                                    <li <?php if ($F == 'Stat/Maintainance') echo $FA; ?>><a href="<?= base_url('Stat/Maintainance') ?>"><span class="sub-item">รายงานผลการส่งซ่อมบำรุง</span></a></li>
                                 </ul>
                             </div>
                         </li>
@@ -81,9 +81,9 @@ $FA = 'class="active"';
                             </a>
                             <div class="collapse <?php if ($C == 'Manage') echo $CS; ?>" id="Grp2">
                                 <ul class="nav nav-collapse">
-                                    <li <?php if ($F == 'Manage/Maps') echo $FA; ?>><a href="<?= base_url() ?>"><span class="sub-item">แผนที่การจัดเก็บ</span></a></li>
+                                    <li <?php if ($F == 'Manage/Maps') echo $FA; ?>><a href="<?= base_url('Manage/Maps') ?>"><span class="sub-item">แผนที่การจัดเก็บ</span></a></li>
                                     <li <?php if ($F == 'Manage/Collect') echo $FA; ?>><a href="<?= base_url('Manage/Collect') ?>"><span class="sub-item">ตารางแสดงผลการจัดเก็บ</span></a></li>
-                                    <li <?php if ($F == 'Manage/Group') echo $FA; ?>><a href="<?= base_url() ?>"><span class="sub-item">จัดกลุ่มผู้ใช้และรถ</span></a></li>
+                                    <li <?php if ($F == 'Manage/Group') echo $FA; ?>><a href="<?= base_url('Manage/Group') ?>"><span class="sub-item">จัดกลุ่มผู้ใช้และรถ</span></a></li>
                                 </ul>
                             </div>
                         </li>
@@ -93,11 +93,11 @@ $FA = 'class="active"';
                                 <p>จัดการข้อมูลระบบ</p>
                                 <span class="caret"></span>
                             </a>
-                            <div class="collapse <?php if ($C == 'User') echo $CS; ?>" id="Grp3">
+                            <div class="collapse <?php if ($C == 'System') echo $CS; ?>" id="Grp3">
                                 <ul class="nav nav-collapse">
-                                    <li <?php if ($F == 'User') echo $FA; ?>><a href="<?= base_url() ?>"><span class="sub-item">ตารางแสดงผลผู้ใช้งาน</span></a></li>
-                                    <li <?php if ($F == 'Car') echo $FA; ?>><a href="<?= base_url() ?>"><span class="sub-item">ตารางแสดงผลข้อมูลรถ</span></a></li>
-                                    <li <?php if ($F == 'Trash') echo $FA; ?>><a href="<?= base_url() ?>"><span class="sub-item">ตารางแสดงข้อมูลถังขยะ</span></a></li>
+                                    <li <?php if ($F == 'System/User') echo $FA; ?>><a href="<?= base_url('System/User') ?>"><span class="sub-item">ตารางแสดงผลผู้ใช้งาน</span></a></li>
+                                    <li <?php if ($F == 'System/Car') echo $FA; ?>><a href="<?= base_url('System/Car') ?>"><span class="sub-item">ตารางแสดงผลข้อมูลรถ</span></a></li>
+                                    <li <?php if ($F == 'System/Trash') echo $FA; ?>><a href="<?= base_url('System/Trash') ?>"><span class="sub-item">ตารางแสดงข้อมูลถังขยะ</span></a></li>
                                 </ul>
                             </div>
                         </li>
