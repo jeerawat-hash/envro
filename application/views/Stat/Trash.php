@@ -1,28 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title><?=$this->config->item('project').' | '.$FuncName;?></title>
-	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-	<link rel="icon" href="<?=base_url('ui/assets/img/icon.ico')?>" type="image/x-icon"/>
-	
-	<!-- Fonts and icons -->
-	<script src="<?=base_url('ui/assets/js/plugin/webfont/webfont.min.js')?>"></script>
-	<script>
-		WebFont.load({
-			google: {"families":["Lato:300,400,700,900"]},
-			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['<?=base_url('ui/assets/css/fonts.min.css')?>']},
-			active: function() {
-				sessionStorage.fonts = true;
-			}
-		});
-	</script>
-
-	<!-- CSS Files -->
-	<link rel="stylesheet" href="<?=base_url('ui/assets/css/bootstrap.min.css')?>">
-	<link rel="stylesheet" href="<?=base_url('ui/assets/css/atlantis.min.css')?>">
-	<!-- CSS Just for demo purpose, don't include it in your project -->
-	<link rel="stylesheet" href="<?=base_url('ui/assets/css/demo.css')?>">
+<?php $this->view('Include/Head');?>
 </head>
 <body>
 	<div class="wrapper">
@@ -1260,22 +1239,7 @@
 		</div>
 <?php $this->view('Include/Custom');?>
 	</div>
-	<!--   Core JS Files   -->
-	<script src="<?=base_url('ui/assets/js/core/jquery.3.2.1.min.js')?>"></script>
-	<script src="<?=base_url('ui/assets/js/core/popper.min.js')?>"></script>
-	<script src="<?=base_url('ui/assets/js/core/bootstrap.min.js')?>"></script>
-	<!-- jQuery UI -->
-	<script src="<?=base_url('ui/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js')?>"></script>
-	<script src="<?=base_url('ui/assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js')?>"></script>
-	
-	<!-- jQuery Scrollbar -->
-	<script src="<?=base_url('ui/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js')?>"></script>
-	<!-- Datatables -->
-	<script src="<?=base_url('ui/assets/js/plugin/datatables/datatables.min.js')?>"></script>
-	<!-- Atlantis JS -->
-	<script src="<?=base_url('ui/assets/js/atlantis.min.js')?>"></script>
-	<!-- Atlantis DEMO methods, don't include it in your project! -->
-	<script src="<?=base_url('ui/assets/js/setting-demo2.js')?>"></script>
+<?php $this->view('Include/Script');?>
 	<script >
 		$(document).ready(function() {
 			$('#basic-datatables').DataTable({
