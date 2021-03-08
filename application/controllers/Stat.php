@@ -21,7 +21,6 @@ class Stat extends CI_Controller {
 		$FT = 'Stat/Trash';
 		$this->V['FuncID'] = $FT;
 		$this->V['FuncName'] = 'จำนวนถังในระบบ';
-		$this->V['Description'] = '';
 		$this->load->view($FT, $this->V);
 	}
 
@@ -30,7 +29,6 @@ class Stat extends CI_Controller {
 		$FT = 'Stat/Car';
 		$this->V['FuncID'] = $FT;
 		$this->V['FuncName'] = 'จำนวนรถในระบบ';
-		$this->V['Description'] = '';
 		$this->load->view($FT, $this->V);
 	}
 
@@ -39,7 +37,6 @@ class Stat extends CI_Controller {
 		$FT = 'Stat/Summary';
 		$this->V['FuncID'] = $FT;
 		$this->V['FuncName'] = 'จำแนกผลรวมการจัดเก็บ';
-		$this->V['Description'] = '';
 		$this->load->view($FT, $this->V);
 	}
 
@@ -48,7 +45,6 @@ class Stat extends CI_Controller {
 		$FT = 'Stat/Maintainance';
 		$this->V['FuncID'] = $FT;
 		$this->V['FuncName'] = 'รายงานผลการส่งซ่อมบำรุง';
-		$this->V['Description'] = '';
 		$this->load->view($FT, $this->V);
 	}
 }
