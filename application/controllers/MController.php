@@ -2,7 +2,7 @@
 
 class MController extends CI_Controller
 {
-  
+   
   function __construct()
   {
     parent::__construct();
@@ -21,6 +21,7 @@ class MController extends CI_Controller
     $this->load->view('webmanage/collection');
     $this->load->view('webmanage/footer');
   }
+
 }
   
 ?>
